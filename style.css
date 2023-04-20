@@ -1,42 +1,32 @@
-*{
- padding: 0;
- margin: 0;
+body {
+    padding: 0;
+    margin: 0;
 }
-#page_wrapper{
-    height: 100vh;
-}
-#page_wrapper #background_container{
+
+#background_container {
     height: 900px;
     border: 2px solid black;
 }
 
-#page_wrapper #background_container nav #nav_wrapper {
+#background_container nav #nav_wrapper {
     height: 88px;
-    width:100%;
-    border: 2px solid black;
-}
-#page_wrapper #background_container  #main_wrapper{
-    height: calc(100% - 92px); 
-    
     border: 2px solid black;
 }
 
-#page_wrapper #gamepass_container{
+#background_container #main_wrapper {
+    height: calc(100% - 92px);
+    border: 2px solid black;
+}
+
+#gamepass_container {
     height: 1300px;
-
     border: 2px solid black;
-
 }
-#page_wrapper footer #footer_container {
+
+footer #footer_container {
     height: 285px;
-    
     border: 2px solid black;
-
-
 }
-
-
-
 
 
 
