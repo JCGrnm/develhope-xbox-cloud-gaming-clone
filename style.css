@@ -63,6 +63,21 @@ nav #nav_wrapper {
     background-position-x: 0.1px;
 }
 
+#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_container .hover_bg {
+    height: 100%;
+    width: 100%;
+}
+
+#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_bg:hover {
+    background-color: #ffffff1a;
+}
+
 #first_section_wrapper #background_container #background_color #big_cards_container .big_cards:nth-child(2) a {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.9) 100%), url(./images/Card\ Grandi/coffeetalk.jpg);
 }
