@@ -63,18 +63,13 @@ nav #nav_wrapper {
     background-position-x: 0.1px;
 }
 
-#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_container {
+#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .card_hover_bg {
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
-#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_container .hover_bg {
-    height: 100%;
-    width: 100%;
-}
-
-#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .hover_bg:hover {
+#first_section_wrapper #background_container #background_color #big_cards_container .big_cards a .card_hover_bg:hover {
     background-color: #ffffff1a;
 }
 
