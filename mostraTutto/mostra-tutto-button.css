@@ -1,0 +1,26 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  background-color: gray;
+}
+
+.mostra-tutto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  width: 5rem;
+  height: 1rem;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.mostra-tutto:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+}
