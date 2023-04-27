@@ -4,7 +4,7 @@
 }
 
 #first_section_wrapper #background_container {
-    height: 560px;
+    height: 635px;
     background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e 100%), url(../../../assets/images/Card\ Grandi/nfs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
