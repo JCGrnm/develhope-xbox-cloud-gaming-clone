@@ -1,6 +1,28 @@
 nav #nav_wrapper {
-    height: 88px;
     position: absolute;
     width: 100%;
     z-index: 1;
+    padding:24px 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav #nav_wrapper #nav_left button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav #nav_wrapper #nav_left button svg {
+    fill: white;
+}
+
+nav #nav_wrapper #nav_left button:hover {
+    background-color: #515863;
 }
