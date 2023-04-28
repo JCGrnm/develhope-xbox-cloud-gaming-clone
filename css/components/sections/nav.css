@@ -1,10 +1,34 @@
 nav #nav_wrapper {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     width: 100%;
     z-index: 1;
-    padding:24px 42px;
+    padding: 24px 42px;
+}
+
+nav #nav_wrapper #nav_left a {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    min-width: 128px;
+    text-decoration: none;
+    font-family: Bahnschrift semibold;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 0 8px;
+    color: white;
+}
+
+nav #nav_wrapper #nav_left a svg {
+    fill: white;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+nav #nav_wrapper #nav_left a:hover {
+    background-color: #515863;
 }
 
 nav #nav_wrapper #nav_left button {
@@ -13,6 +37,77 @@ nav #nav_wrapper #nav_left button {
     align-items: center;
     height: 40px;
     width: 40px;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color: #484e58;
+    border: none;
+    cursor: pointer;
+}
+
+nav #nav_wrapper #nav_right {
+    display: flex;
+    gap: 15px;
+}
+
+nav #nav_wrapper #nav_right button {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding:24px 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav #nav_wrapper #nav_right button svg {
+    fill: white;
+}
+
+nav #nav_wrapper #nav_right button:hover {
+    background-color: #515863;
+}
+
+nav #nav_wrapper #nav_right form {
+    display: flex;
+    height: 100%;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container {
+    min-width: 288px;
+    border: 1px solid white;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    display: flex;
+    align-items: center;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container svg {
+    fill: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container input#search {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+    outline: none;
+    color: white;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container input::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+nav #nav_wrapper #nav_right form button {
+    background-color: transparent;
+    display: none;
+}
+
+nav #nav_wrapper #nav_right form button:hover {
     border-radius: 100%;
     border: none;
     cursor: pointer;
