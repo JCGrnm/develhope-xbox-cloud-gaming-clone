@@ -106,7 +106,7 @@
     background-color: black;
 }
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1365px) {
     #first_section_wrapper #big_cards_container .big_cards {
         flex: 0 0 551px;
         height: 310px;

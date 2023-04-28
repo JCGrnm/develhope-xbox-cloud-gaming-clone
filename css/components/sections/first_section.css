@@ -30,3 +30,10 @@
     position: relative;
     width: 100%;
 }
+
+@media screen and (max-width:1365px) {
+    #first_section_wrapper::before {
+        min-height: 200px;
+        height: 40vw;
+    }
+}
