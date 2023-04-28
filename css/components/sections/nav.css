@@ -31,12 +31,7 @@ nav #nav_wrapper #nav_left a:hover {
     background-color: #515863;
 }
 
-nav #nav_wrapper #nav_right {
-    display: flex;
-    gap: 15px;
-}
-
-nav #nav_wrapper #nav_right button {
+nav #nav_wrapper #nav_left button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +42,20 @@ nav #nav_wrapper #nav_right button {
     background-color: #484e58;
     border: none;
     cursor: pointer;
+}
+
+nav #nav_wrapper #nav_right {
+    display: flex;
+    gap: 15px;
+}
+
+nav #nav_wrapper #nav_right button {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding:24px 42px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav #nav_wrapper #nav_right button svg {
@@ -99,5 +108,16 @@ nav #nav_wrapper #nav_right form button {
 }
 
 nav #nav_wrapper #nav_right form button:hover {
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav #nav_wrapper #nav_left button svg {
+    fill: white;
+}
+
+nav #nav_wrapper #nav_left button:hover {
     background-color: #515863;
 }
