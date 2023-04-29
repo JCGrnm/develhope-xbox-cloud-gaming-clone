@@ -1,0 +1,163 @@
+#first_section_wrapper #cloud_wrapper .cloud_cards_container .cloud_cards {
+  height: 100%;
+  width: 100%;
+}
+
+#first_section_wrapper #cloud_wrapper .cloud_cards_container .cloud_cards a {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards:nth-child(3)
+  a
+  .cloud_cards_txt {
+  transition: 0.3s;
+  transform: translateY(53px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards:nth-child(5)
+  a
+  .cloud_cards_txt {
+  transition: 0.3s;
+  transform: translateY(53px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards:nth-child(6)
+  a
+  .cloud_cards_txt {
+  transition: 0.3s;
+  transform: translateY(63px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards:nth-child(8)
+  a
+  .cloud_cards_txt {
+  transition: 0.3s;
+  transform: translateY(42px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a
+  .cloud_cards_txt {
+  width: 100%;
+  padding: 5px 0 6px 0;
+  position: absolute;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.653);
+  transform: translateY(32px);
+  transition: 0.3s;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a:hover
+  .cloud_cards_txt {
+  transform: translateY(0);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a
+  .svg_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a
+  .gamepass_img_container
+  svg {
+  margin: 8px;
+  width: 24px;
+  height: 16px;
+  fill: white;
+  background-color: transparent;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a
+  .joypad_img_container {
+  background-color: rgba(0, 0, 0, 0.653);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-top-left-radius: 5px;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a:hover
+  .svg_container
+  .joypad_img_container {
+  transform: translateY(32px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a:hover
+  .svg_container
+  .gamepass_img_container {
+  transform: translateY(32px);
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  a
+  .joypad_img_container
+  svg {
+  fill: white;
+  border-top-left-radius: 4px;
+}
+
+#first_section_wrapper
+  #cloud_wrapper
+  .cloud_cards_container
+  .cloud_cards
+  .cloud_cards_txt
+  span {
+  color: white;
+  float: left;
+}
