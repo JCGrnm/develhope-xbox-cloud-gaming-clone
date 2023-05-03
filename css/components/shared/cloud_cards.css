@@ -1,8 +1,3 @@
-#first_section_wrapper #cloud_wrapper .cloud_cards_container .cloud_cards {
-  height: 100%;
-  width: 100%;
-}
-
 #first_section_wrapper #cloud_wrapper .cloud_cards_container .cloud_cards a {
   position: relative;
   border-radius: 5px;
