@@ -4,9 +4,7 @@
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    margin-right: 16px;
     box-shadow: 0px 1.8px 6px 0px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
 }
 
 #first_section_wrapper #big_cards_container .big_cards a {
@@ -119,9 +117,6 @@
 }
 
 @media screen and (min-width:1920px) {
-    #first_section_wrapper #big_cards_container {
-        padding-left: 80px;
-    }
     #first_section_wrapper #big_cards_container .big_cards a {
         background-size: cover;
     }
