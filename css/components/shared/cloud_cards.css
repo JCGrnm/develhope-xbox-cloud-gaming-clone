@@ -36,7 +36,7 @@
   a
   .cloud_cards_txt {
   transition: 0.3s;
-  transform: translateY(63px);
+  transform: translateY(74px);
 }
 
 #first_section_wrapper
@@ -46,7 +46,7 @@
   a
   .cloud_cards_txt {
   transition: 0.3s;
-  transform: translateY(42px);
+  transform: translateY(53px);
 }
 
 #first_section_wrapper
