@@ -5,13 +5,12 @@
 
 #first_section_wrapper::before {
     content: "";
-    background: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e 100%), url(../../../assets/images/Card\ Grandi/nfs.jpg);
+    background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e calc(28.125vw + 140.5px)), url(../../../assets/images/Card\ Grandi/nfs.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height:auto;
     width: 100%;
-    height: 35.331vw;
+    height: calc(28.125vw + 210px);
     position: absolute;
 }
 
@@ -33,7 +32,26 @@
 
 @media screen and (max-width:1365px) {
     #first_section_wrapper::before {
-        min-height: 200px;
-        height: 40vw;
+        min-height: 450px;
+        background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e calc(28.125vw + 160.5px)), url(../../../assets/images/Card\ Grandi/nfs.jpg);
+    }
+
+    #first_section_wrapper #big_cards_container {
+        margin-bottom: 28px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #first_section_wrapper::before {
+        min-height: 450px;
+        background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e calc(32.5vw + 192px)), url(../../../assets/images/Card\ Grandi/nfs.jpg);
+    }
+
+    #first_section_wrapper #big_cards_container {
+        margin-bottom: 20px;
+    }
+
+    #first_section_wrapper #cloud_cards_container {
+        padding: 0 32px;
     }
 }
