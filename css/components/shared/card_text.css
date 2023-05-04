@@ -13,7 +13,7 @@
   font-weight: unset;
 }
 
-.mostra-tutto {
+.mostra_tutto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
   padding-bottom: 2px;
 }
 
-.mostra-tutto:hover {
+.mostra_tutto:hover {
   background-color: rgba(255, 255, 255, 0.35);
   border-radius: 3px;
 }
