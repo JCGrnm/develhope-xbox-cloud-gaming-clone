@@ -4,7 +4,7 @@ nav #nav_wrapper {
     position: absolute;
     width: 100%;
     z-index: 1;
-    padding: 23px 65px 24px 42px;
+    padding: 23px 48px 24px 42px;
 }
 
 nav #nav_wrapper #nav_left {
@@ -116,21 +116,19 @@ nav #nav_wrapper #nav_right .accedi_container {
     
     /* FEATURE-BOTTONE-ACCEDI */
 
-nav #nav_wrapper #nav_right button svg {
-    fill: white;
+nav #nav_wrapper #nav_right form button {
+    background-color: transparent;
+    display: none;
 }
 
-nav #nav_wrapper #nav_right button:hover {
+nav #nav_wrapper #nav_right form button:hover {
     background-color: #515863;
 }
 
-nav #nav_wrapper #nav_right form {
-    height: 100%;
-}
 
 nav #nav_wrapper #nav_right form #search_bar_container {
     min-width: 290px;
-    height: 100%;
+    height: calc(100% + 1px);
     border: 1px solid #6B7584;
     border-top-left-radius: 999px;
     border-bottom-left-radius: 999px;
@@ -138,7 +136,24 @@ nav #nav_wrapper #nav_right form #search_bar_container {
     border-bottom-right-radius: 999px;
     display: flex;
     align-items: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #000000b3;
+    position: relative;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    right: -6px;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container:focus-within:after {
+    border: 2px solid white;
 }
 
 nav #nav_wrapper #nav_right form #search_bar_container svg {
@@ -155,6 +170,14 @@ nav #nav_wrapper #nav_right form #search_bar_container input#search  {
     font-size: 16px;
     font-weight: 400;
     padding-top: 1px;
+    caret-color: #008746;
+    z-index: 1;
+    color: #ffffffa6;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_container input#search::selection {
+    background-color: #008746;
+    color: white;
 }
 
 nav #nav_wrapper #nav_right form #search_bar_container input#search::placeholder {
@@ -164,17 +187,6 @@ nav #nav_wrapper #nav_right form #search_bar_container input#search::placeholder
 nav #nav_wrapper #nav_right form #search_bar_container input::-webkit-search-cancel-button {
     display: none;
 }
-
-
-nav #nav_wrapper #nav_right form button {
-    background-color: transparent;
-    display: none;
-}
-
-nav #nav_wrapper #nav_right form button:hover {
-    background-color: #515863;
-}
-
 
 nav #nav_wrapper #nav_right button {
     display: flex;
@@ -188,4 +200,12 @@ nav #nav_wrapper #nav_right button {
     border: none;
     cursor: pointer;
     margin-top: 1px;
+}
+
+nav #nav_wrapper #nav_right button svg {
+    fill: white;
+}
+
+nav #nav_wrapper #nav_right button:hover {
+    background-color: #515863;
 }

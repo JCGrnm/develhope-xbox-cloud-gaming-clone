@@ -1,1 +1,7 @@
 @import url(./sections/nav.css);
+@import url(./sections/first_section.css);
+@import url(./shared/card_grandi.css);
+@import url(./sections/cloud_cards_container.css);
+@import url(./shared/cloud_cards.css);
+@import url(./shared/card_text.css);
+
