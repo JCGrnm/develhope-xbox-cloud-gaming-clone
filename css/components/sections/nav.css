@@ -4,30 +4,31 @@ nav #nav_wrapper {
     position: absolute;
     width: 100%;
     z-index: 1;
-    padding: 23px 48px 24px 42px;
+    margin: 24px 0;
+    padding: 0 48px 0 42px;
 }
 
 nav #nav_wrapper #nav_left {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
 nav #nav_wrapper #nav_left button {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 40px;
+    height: 100%;
+    padding: 6px 0;
     width: 40px;
     text-decoration: none;
     border-radius: 100%;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    margin-top: 1px;
 }
 
 nav #nav_wrapper #nav_left button svg {
-    fill:white;
+    fill: white;
     background-color: transparent;
 }
 
@@ -39,21 +40,20 @@ nav #nav_wrapper #nav_left a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     text-decoration: none;
-    font-family: Bahnschrift semibold;
-    font-size: 14px;
+    font-weight: unset;
     border-radius: 4px;
     padding: 0 8px;
-    padding-top: 2px;
     color: white;
+    height: 100%;
+    font-size: 14px;
+    font-family: Bahnschrift semibold;
 }
 
 nav #nav_wrapper #nav_left a svg {
     fill: white;
     background-color: transparent;
-    margin-left: 8px;
-    margin-bottom: 4px;
+    margin: 0px 0 2px 8px;
 }
 
 nav #nav_wrapper #nav_left a:hover {
@@ -62,7 +62,7 @@ nav #nav_wrapper #nav_left a:hover {
 
 nav #nav_wrapper #nav_right {
     display: flex;
-    gap: 15px;
+    gap: 16px;
 }
   /* FEATURE-BOTTONE-ACCEDI */
 nav #nav_wrapper #nav_right .accedi_container {
@@ -116,20 +116,58 @@ nav #nav_wrapper #nav_right .accedi_container {
     
     /* FEATURE-BOTTONE-ACCEDI */
 
-nav #nav_wrapper #nav_right form button {
+nav #nav_wrapper #nav_right form button.search_button {
     background-color: transparent;
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    text-decoration: none;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding-top: 2px;
+}
+
+nav #nav_wrapper #nav_right form button.search_button svg {
+    fill: white;
 }
 
 nav #nav_wrapper #nav_right form button:hover {
     background-color: #515863;
 }
 
+nav #nav_wrapper #nav_right form #search_bar_focus {
+    min-width: 288px;
+    height: 100%;
+    position: relative;
+}
 
-nav #nav_wrapper #nav_right form #search_bar_container {
-    min-width: 290px;
-    height: calc(100% + 1px);
-    border: 1px solid #6B7584;
+nav #nav_wrapper #nav_right form #search_bar_focus::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    left: -6px;
+    bottom: -6px;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+nav #nav_wrapper #nav_right form:focus-within #search_bar_focus::before  {
+    border: 2px solid white;
+}
+
+
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 1px #6b7584;
     border-top-left-radius: 999px;
     border-bottom-left-radius: 999px;
     border-top-right-radius: 999px;
@@ -138,30 +176,15 @@ nav #nav_wrapper #nav_right form #search_bar_container {
     align-items: center;
     background-color: #000000b3;
     position: relative;
+    overflow: hidden;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_container::after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    right: -6px;
-    border-top-left-radius: 999px;
-    border-bottom-left-radius: 999px;
-    border-top-right-radius: 999px;
-    border-bottom-right-radius: 999px;
-}
-
-nav #nav_wrapper #nav_right form #search_bar_container:focus-within:after {
-    border: 2px solid white;
-}
-
-nav #nav_wrapper #nav_right form #search_bar_container svg {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container svg.SmallScreenSearchIconButton-module__icon___pnlay {
     fill: #ffffffa6;
-    margin: 1px 18px 1px 16px;
+    margin: 1px 0 1px 16px;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_container input#search  {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search {
     height: 100%;
     border: none;
     background-color: transparent;
@@ -169,43 +192,91 @@ nav #nav_wrapper #nav_right form #search_bar_container input#search  {
     outline: none;
     font-size: 16px;
     font-weight: 400;
-    padding-top: 1px;
     caret-color: #008746;
     z-index: 1;
     color: #ffffffa6;
+    margin:0 18px;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_container input#search::selection {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search::selection {
     background-color: #008746;
     color: white;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_container input#search::placeholder {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search::placeholder {
     color: #ffffffa6;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_container input::-webkit-search-cancel-button {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input::-webkit-search-cancel-button {
     display: none;
 }
 
-nav #nav_wrapper #nav_right button {
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 100%;
+    border-radius: 100%;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search:not(:placeholder-shown)~button {
+    position: relative;
+    left: -8px;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button:hover {
+    background-color: #484e58;
+}
+
+nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button svg {
+    fill: white;
+}
+
+nav #nav_wrapper #nav_right button.account_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    padding: 0 8px;
     text-decoration: none;
     border-radius: 100%;
     background-color: #484e58;
     border: none;
     cursor: pointer;
-    margin-top: 1px;
 }
 
-nav #nav_wrapper #nav_right button svg {
+nav #nav_wrapper #nav_right button.account_button svg {
     fill: white;
 }
 
-nav #nav_wrapper #nav_right button:hover {
+nav #nav_wrapper #nav_right button.account_button:hover {
     background-color: #515863;
+}
+
+@media screen and (min-width:1920px) {
+    nav #nav_wrapper {
+        padding: 0 80px 0 74px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    nav #nav_wrapper {
+        padding-left: 26px;
+        padding-right: 32px;
+    }
+
+    nav #nav_wrapper #nav_right form #search_bar_focus {
+        display: none;
+    }
+
+    nav #nav_wrapper #nav_right form button.search_button {
+        display: initial;
+    }
 }
