@@ -21,13 +21,12 @@
 }
 
 #first_section_wrapper #big_cards_container {
-  padding-top: 88px;
-  padding-left: 48px;
-  padding-right: 32px;
+  padding: 88px 80px 20px 80px;
   display: flex;
   overflow-x: scroll;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   position: relative;
+  gap: 16px;
 }
 
 #first_section_wrapper #cloud_wrapper {
@@ -39,6 +38,14 @@
   overflow-x: scroll;
   padding: 0 48px 12px 48px;
   gap: 1rem;
+}
+
+@media screen and (max-width: 1919px) {
+  #first_section_wrapper #big_cards_container {
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 42px;
+  }
 }
 
 @media screen and (max-width: 1365px) {
