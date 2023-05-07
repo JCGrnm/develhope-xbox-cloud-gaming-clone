@@ -156,3 +156,32 @@
   color: white;
   float: left;
 }
+
+
+@media screen and (max-width: 767px) {
+  #first_section_wrapper #cloud_wrapper .cloud_cards_container,
+  #first_section_wrapper #cloud_wrapper .card_text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #first_section_wrapper
+    #cloud_wrapper
+    .cloud_cards_container
+    .cloud_cards
+    a
+    img {
+    min-width: 156px;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  #first_section_wrapper #cloud_wrapper .cloud_cards_container,
+  #first_section_wrapper #cloud_wrapper .card_text {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
