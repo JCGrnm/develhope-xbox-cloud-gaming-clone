@@ -1,582 +1,1079 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xbox Cloud Gaming (beta)</title>
+    <link rel="icon" type="x/icon" href="./assets/consoles-xbox-16.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xbox Cloud Gaming (beta)</title>
-  <link rel="icon" type="x/icon" href="./assets/consoles-xbox-16.ico">
-  <link rel="stylesheet" href="./css/index.css" />
-</head>
-
-<body>
-  <nav>
-    <div id="nav_wrapper">
-      <div id="nav_left"> 
-        <button>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="28px" height="28px"
-            class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU XboxButton-module__headerXboxIcon___Wjzpv Icon-module__icon___6ICyA"
-            aria-hidden="true">
-            <title>Guida Xbox Cloud Gaming</title>
-            <path
-              d="M492 158q-4 0-5-1v-2l2-3Q614 77 746 39t278-39q143 0 277 38t256 113l3 2q-3 5-6 5-8 0-17-2t-17-4q-9-1-18-1t-18 0q-47 0-95 9t-96 24-92 34-88 39q-22 11-44 21t-43 25h-5q-43-27-100-54t-120-49-123-36-113-14q-19 0-39 4t-34 4zm251 412q-44 53-101 128T525 862t-117 184-102 189-72 180-28 156q0 17 2 37t8 36l-1 2-2 1-4-2q-103-139-156-293T0 1024q0-98 20-199t60-196 96-180 130-153q5-4 15-5t15-2q30 0 66 14t75 38 76 53 74 60 65 59 51 50l1 4-1 3zm968-281q7 0 16 1t15 6q73 71 130 155t96 178 59 194 21 201q0 173-53 328t-156 293l-6 1-2-3q3-4 5-14t3-21 2-22 1-16q0-69-27-155t-72-180-102-190-117-184-117-163-102-129l-1-3 1-3q21-21 50-49t65-58 73-61 77-53 75-38 66-15zm-687 533q29 18 56 42t54 47q42 37 102 94t127 128 131 149 117 155 84 149 32 129q0 23-6 43t-23 37q-31 31-69 57t-76 49q-120 72-254 109t-275 38q-141 0-274-37t-255-110q-17-10-43-26t-51-37-47-40-27-39q-7-20-7-45 0-54 30-122t78-142 110-149 123-142 118-123 97-92q34-30 72-64t76-58z">
-            </path>
-          </svg>
-        </button>
-        <a href="#">CLOUD GAMING
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="32px" height="32px"
-            class="CloudGamingButton-module__betaIcon___Xy-SS Icon-module__icon___6ICyA Icon-module__xLarge___Hh0AA">
-            <title>BETA</title>
-            <path
-              d="M395 986h-49V869h42q14 0 28 2t26 8 19 16 8 28q0 32-22 47t-52 16zm93 146q0 36-25 51t-57 15h-60v-130h61q31 0 56 14t25 50zm1133-257q2 23 9 44l53 166h-127l54-167q8-21 9-43h2zm334-363q19 0 36 7t29 20 20 30 8 36v838q0 19-7 36t-20 29-30 20-36 8H93q-19 0-36-7t-29-20-20-30-8-36V605q0-19 7-36t20-29 30-20 36-8h1862zM605 1133q0-52-33-81t-82-37v-1q19-6 36-16t31-24 21-32 8-39q0-35-16-57t-41-36-55-18-59-5H235v493h190q35 0 67-8t58-26 40-46 15-67zm377 147v-90H797v-113h162v-90H797V878h174v-91H686v493h296zm291 0V878h141v-91h-392v91h139v402h112zm470 0h121l-175-493h-132l-179 493h120l35-110h175l35 110z">
-            </path>
-          </svg>
-        </a>
-      </div>
-      <div id="nav_right"> 
-      <!-- ACCEDI BUTTON //////////////////-->
-          <div class="accedi_container">
-            <a class="UpsellButton-module__button___PyzNp CallToActionButton-module__callToActionButton___LbTTX Button-module__basicBorderRadius___TaX9J Button-module__defaultBase___c7wIT Button-module__buttonBase___olICK Button-module__callToAction___mSaZg Button-module__textNoUnderline___kHdUB Button-module__typeBrand___MMuct Button-module__sizeMedium___T+8s+ Button-module__overlayModeSolid___v6EcO"
-              href="https://login.live.com/oauth20_authorize.srf?client_id=1f907974-e22b-4810-a9de-d9647380c97e&scope=xboxlive.signin+openid+profile+offline_access&redirect_uri=https%3A%2F%2Fwww.xbox.com%2Fauth%2Fmsa%3Faction%3DloggedIn%26locale_hint%3Dit-IT&response_type=code&state=eyJpZCI6IjYzZDBiNDE4LWEyNGUtNGQyOC05ZGE1LTQ4MjgzYTE1MmE2MiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D|https%253A%252F%252Fwww.xbox.com%252Fit-IT%252Fplay&response_mode=fragment&nonce=c7798d02-7401-46c2-a160-107650413b84&prompt=login&code_challenge=cfZ0BTYqM8X_IuVBI8PQ3FKHLju8k2Lw95eB_qgd428&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=2.32.2&uaid=dea0baf6510f42fba5b91c00f777ac3a&msproxy=1&issuer=mso&tenant=consumers&ui_locales=it-IT&client_info=1&epct=PAQABAAEAAAD--DLA3VO7QrddgJg7Wevrp-f6AhAvEJpnc2MdYbuDIQpQfB5OBLnYhT5KUdT60GF7IhWIQr2lucUEme6SafN1VPkot7lgLTFOUgFRRSD8IA72feOr1Lum5aHbw4Jxfa-tfb-mxDVXnKC34VPIAYZrGk6Eiz5qVumaFc138jm_CyJuZRnNnlhxXgG48X0ttldaS1BmVS--AN4pR8xv5T2Q4gV4tpvV1ySiw55O91e7ryAA&jshs=0#">
-              Accedi</a>
-          </div>
-          <!-- ACCEDI BUTTON /////////////////////-->
-        <form>
-          <label for="search">
-            <div id="search_bar_focus">
-              <div id="search_bar_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="16px" height="16px"
-                  class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU SmallScreenSearchIconButton-module__icon___pnlay Icon-module__icon___6ICyA"
-                  aria-hidden="true">
-                  <path
-                    d="M1344 0q97 0 187 25t168 71 143 110 110 142 71 169 25 187q0 97-25 187t-71 168-110 143-142 110-169 71-187 25q-127 0-240-41t-211-122l-784 784q-19 19-45 19t-45-19-19-45q0-26 19-45l784-784q-80-98-121-211t-42-240q0-97 25-187t71-168 110-143T988 96t169-71 187-25zm0 1280q119 0 224-45t183-124 123-183 46-224q0-119-45-224t-124-183-183-123-224-46q-119 0-224 45T937 297 814 480t-46 224q0 119 45 224t124 183 183 123 224 46z">
-                  </path>
-                </svg>
-                <input type="search" id="search" placeholder="Cerca giochi" autocomplete="off">
-                <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="12px" height="12px"
-                    class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU Input-module__acceleratorIcon___aeQsz Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
-                    aria-hidden="true">
-                    <path
-                      d="M2029 109l-914 915 914 915-90 90-915-914-915 914-90-90 914-915L19 109l90-90 915 914 915-914 90 90z">
-                    </path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </label>
-          <button class="search_button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="22px"
-              height="22px"
-              class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU SmallScreenSearchIconButton-module__icon___pnlay Icon-module__icon___6ICyA"
-              aria-hidden="true">
+  <body>
+    <nav>
+      <div id="nav_wrapper">
+        <div id="nav_left">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 2048 2048"
+              width="28px"
+              height="28px"
+              class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU XboxButton-module__headerXboxIcon___Wjzpv Icon-module__icon___6ICyA"
+              aria-hidden="true"
+            >
+              <title>Guida Xbox Cloud Gaming</title>
               <path
-                d="M1344 0q97 0 187 25t168 71 143 110 110 142 71 169 25 187q0 97-25 187t-71 168-110 143-142 110-169 71-187 25q-127 0-240-41t-211-122l-784 784q-19 19-45 19t-45-19-19-45q0-26 19-45l784-784q-80-98-121-211t-42-240q0-97 25-187t71-168 110-143T988 96t169-71 187-25zm0 1280q119 0 224-45t183-124 123-183 46-224q0-119-45-224t-124-183-183-123-224-46q-119 0-224 45T937 297 814 480t-46 224q0 119 45 224t124 183 183 123 224 46z">
-              </path>
+                d="M492 158q-4 0-5-1v-2l2-3Q614 77 746 39t278-39q143 0 277 38t256 113l3 2q-3 5-6 5-8 0-17-2t-17-4q-9-1-18-1t-18 0q-47 0-95 9t-96 24-92 34-88 39q-22 11-44 21t-43 25h-5q-43-27-100-54t-120-49-123-36-113-14q-19 0-39 4t-34 4zm251 412q-44 53-101 128T525 862t-117 184-102 189-72 180-28 156q0 17 2 37t8 36l-1 2-2 1-4-2q-103-139-156-293T0 1024q0-98 20-199t60-196 96-180 130-153q5-4 15-5t15-2q30 0 66 14t75 38 76 53 74 60 65 59 51 50l1 4-1 3zm968-281q7 0 16 1t15 6q73 71 130 155t96 178 59 194 21 201q0 173-53 328t-156 293l-6 1-2-3q3-4 5-14t3-21 2-22 1-16q0-69-27-155t-72-180-102-190-117-184-117-163-102-129l-1-3 1-3q21-21 50-49t65-58 73-61 77-53 75-38 66-15zm-687 533q29 18 56 42t54 47q42 37 102 94t127 128 131 149 117 155 84 149 32 129q0 23-6 43t-23 37q-31 31-69 57t-76 49q-120 72-254 109t-275 38q-141 0-274-37t-255-110q-17-10-43-26t-51-37-47-40-27-39q-7-20-7-45 0-54 30-122t78-142 110-149 123-142 118-123 97-92q34-30 72-64t76-58z"
+              ></path>
             </svg>
           </button>
-        </form>
-        <button class="account_button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="24px"
-            height="24px" class="GamerPic-module__playerIcon___plBaj Icon-module__icon___6ICyA" aria-hidden="true">
-            <path
-              d="M1329 1203q136 47 245 131t187 195 118 243 41 276h-128q0-164-58-304t-162-244-243-161-305-59q-108 0-206 27t-184 76-155 119-119 155-77 184-27 207H128q0-143 42-274t119-242 186-195 245-133q-78-42-140-102T475 968t-67-156-24-172q0-88 23-170t64-153 100-129T701 88t153-65 170-23q88 0 170 23t153 64 129 100 100 130 65 153 23 170q0 87-23 170t-67 157-106 134-139 102zM512 640q0 106 40 199t110 162 163 110 199 41q106 0 199-40t162-110 110-163 41-199q0-106-40-199t-110-162-163-110-199-41q-106 0-199 40T663 278 553 441t-41 199z">
-            </path>
-          </svg>
-        </button>
+          <a href="#"
+            >CLOUD GAMING
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 2048 2048"
+              width="32px"
+              height="32px"
+              class="CloudGamingButton-module__betaIcon___Xy-SS Icon-module__icon___6ICyA Icon-module__xLarge___Hh0AA"
+            >
+              <title>BETA</title>
+              <path
+                d="M395 986h-49V869h42q14 0 28 2t26 8 19 16 8 28q0 32-22 47t-52 16zm93 146q0 36-25 51t-57 15h-60v-130h61q31 0 56 14t25 50zm1133-257q2 23 9 44l53 166h-127l54-167q8-21 9-43h2zm334-363q19 0 36 7t29 20 20 30 8 36v838q0 19-7 36t-20 29-30 20-36 8H93q-19 0-36-7t-29-20-20-30-8-36V605q0-19 7-36t20-29 30-20 36-8h1862zM605 1133q0-52-33-81t-82-37v-1q19-6 36-16t31-24 21-32 8-39q0-35-16-57t-41-36-55-18-59-5H235v493h190q35 0 67-8t58-26 40-46 15-67zm377 147v-90H797v-113h162v-90H797V878h174v-91H686v493h296zm291 0V878h141v-91h-392v91h139v402h112zm470 0h121l-175-493h-132l-179 493h120l35-110h175l35 110z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div id="nav_right">
+          <!-- ACCEDI BUTTON //////////////////-->
+          <div class="accedi_container">
+            <a
+              class="UpsellButton-module__button___PyzNp CallToActionButton-module__callToActionButton___LbTTX Button-module__basicBorderRadius___TaX9J Button-module__defaultBase___c7wIT Button-module__buttonBase___olICK Button-module__callToAction___mSaZg Button-module__textNoUnderline___kHdUB Button-module__typeBrand___MMuct Button-module__sizeMedium___T+8s+ Button-module__overlayModeSolid___v6EcO"
+              href="https://login.live.com/oauth20_authorize.srf?client_id=1f907974-e22b-4810-a9de-d9647380c97e&scope=xboxlive.signin+openid+profile+offline_access&redirect_uri=https%3A%2F%2Fwww.xbox.com%2Fauth%2Fmsa%3Faction%3DloggedIn%26locale_hint%3Dit-IT&response_type=code&state=eyJpZCI6IjYzZDBiNDE4LWEyNGUtNGQyOC05ZGE1LTQ4MjgzYTE1MmE2MiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D|https%253A%252F%252Fwww.xbox.com%252Fit-IT%252Fplay&response_mode=fragment&nonce=c7798d02-7401-46c2-a160-107650413b84&prompt=login&code_challenge=cfZ0BTYqM8X_IuVBI8PQ3FKHLju8k2Lw95eB_qgd428&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=2.32.2&uaid=dea0baf6510f42fba5b91c00f777ac3a&msproxy=1&issuer=mso&tenant=consumers&ui_locales=it-IT&client_info=1&epct=PAQABAAEAAAD--DLA3VO7QrddgJg7Wevrp-f6AhAvEJpnc2MdYbuDIQpQfB5OBLnYhT5KUdT60GF7IhWIQr2lucUEme6SafN1VPkot7lgLTFOUgFRRSD8IA72feOr1Lum5aHbw4Jxfa-tfb-mxDVXnKC34VPIAYZrGk6Eiz5qVumaFc138jm_CyJuZRnNnlhxXgG48X0ttldaS1BmVS--AN4pR8xv5T2Q4gV4tpvV1ySiw55O91e7ryAA&jshs=0#"
+            >
+              Accedi</a
+            >
+          </div>
+          <!-- ACCEDI BUTTON /////////////////////-->
+          <form>
+            <label for="search">
+              <div id="search_bar_focus">
+                <div id="search_bar_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="16px"
+                    height="16px"
+                    class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU SmallScreenSearchIconButton-module__icon___pnlay Icon-module__icon___6ICyA"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1344 0q97 0 187 25t168 71 143 110 110 142 71 169 25 187q0 97-25 187t-71 168-110 143-142 110-169 71-187 25q-127 0-240-41t-211-122l-784 784q-19 19-45 19t-45-19-19-45q0-26 19-45l784-784q-80-98-121-211t-42-240q0-97 25-187t71-168 110-143T988 96t169-71 187-25zm0 1280q119 0 224-45t183-124 123-183 46-224q0-119-45-224t-124-183-183-123-224-46q-119 0-224 45T937 297 814 480t-46 224q0 119 45 224t124 183 183 123 224 46z"
+                    ></path>
+                  </svg>
+                  <input
+                    type="search"
+                    id="search"
+                    placeholder="Cerca giochi"
+                    autocomplete="off"
+                  />
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2048 2048"
+                      width="12px"
+                      height="12px"
+                      class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU Input-module__acceleratorIcon___aeQsz Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2029 109l-914 915 914 915-90 90-915-914-915 914-90-90 914-915L19 109l90-90 915 914 915-914 90 90z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </label>
+            <button class="search_button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="22px"
+                height="22px"
+                class="Button-module__buttonIcon___540Jm Button-module__noMargin___5UbzU SmallScreenSearchIconButton-module__icon___pnlay Icon-module__icon___6ICyA"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1344 0q97 0 187 25t168 71 143 110 110 142 71 169 25 187q0 97-25 187t-71 168-110 143-142 110-169 71-187 25q-127 0-240-41t-211-122l-784 784q-19 19-45 19t-45-19-19-45q0-26 19-45l784-784q-80-98-121-211t-42-240q0-97 25-187t71-168 110-143T988 96t169-71 187-25zm0 1280q119 0 224-45t183-124 123-183 46-224q0-119-45-224t-124-183-183-123-224-46q-119 0-224 45T937 297 814 480t-46 224q0 119 45 224t124 183 183 123 224 46z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+          <button class="account_button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 2048 2048"
+              width="24px"
+              height="24px"
+              class="GamerPic-module__playerIcon___plBaj Icon-module__icon___6ICyA"
+              aria-hidden="true"
+            >
+              <path
+                d="M1329 1203q136 47 245 131t187 195 118 243 41 276h-128q0-164-58-304t-162-244-243-161-305-59q-108 0-206 27t-184 76-155 119-119 155-77 184-27 207H128q0-143 42-274t119-242 186-195 245-133q-78-42-140-102T475 968t-67-156-24-172q0-88 23-170t64-153 100-129T701 88t153-65 170-23q88 0 170 23t153 64 129 100 100 130 65 153 23 170q0 87-23 170t-67 157-106 134-139 102zM512 640q0 106 40 199t110 162 163 110 199 41q106 0 199-40t162-110 110-163 41-199q0-106-40-199t-110-162-163-110-199-41q-106 0-199 40T663 278 553 441t-41 199z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="first_section_wrapper">
+      <div id="big_cards_container">
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>Need for Speed Heat</h2>
+              <p>Datti da fare di giorno e rischia tutto di notte</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>Coffe Talk - Episodio 2</h2>
+              <p>Hibiscus & Butterfly</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>Valheim</h2>
+              <p>Mettiti alla prova di fronte a Odino</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>7 Days to Die</h2>
+              <p>Sopravvivi in ciò che resta dopo la caduta della civiltà</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>Halo infinite</h2>
+              <p>Il ritorno di Master Chief</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>As Dusk Falls</h2>
+              <p>Ogni famiglia ha dei segreti. Ogni segreto ha un prezzo</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>Dragon Age 2</h2>
+              <p>Diventa il campione di Kirkwall</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="big_cards">
+          <a href="#">
+            <div class="big_card_text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="374 410 1300 1242"
+                width="1em"
+                height="1em"
+                class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                id="gpb-:r4t:"
+                aria-label="Disponibile tramite Game Pass"
+                role="img"
+              >
+                <path
+                  d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                ></path>
+              </svg>
+              <h2>ARK: Ultimate Survivor Edition</h2>
+              <p>La più grande avventura con dinosauri di tutti i tempi</p>
+            </div>
+            <div class="joypad_img_container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048"
+                width="1em"
+                height="1em"
+                class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+              >
+                <path
+                  d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="cloud_wrapper">
+        <div class="card_text">
+          <h2 class="h2">Più diffusi sul cloud</h2>
+          <a href="#" class="mostra_tutto">Mostra tutto</a>
+        </div>
+        <div class="cloud_cards_container">
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/fortnite.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/fortnite.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/fortnite.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu%20diffusi%20sul%20cloud/1920px/fortnite.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    style="display: none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Fortnite</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/atomic%20heart.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/atomic%20heart.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/atomic%20heart.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/atomic%20heart.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Atomic Heart</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/battlefield.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/battlefield.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/battlefield.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/battlefield.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Battlefield™ 2042 Xbox Series X|S</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/farming%20simulator.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/farming%20simulator.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/farming%20simulator.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/farming%20simulator.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Farming Simulator 22</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/forza%20horizon.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/forza%20horizon.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/forza%20horizon.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/forza%20horizon.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Forza Horizon 5 Edizione standard</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/ghost%20recon.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/ghost%20recon.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/ghost%20recon.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/ghost%20recon.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span
+                  >Tom Clancy's Ghost Recon® Wildlands - Standard Edition</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/halo.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/halo.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/halo.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/halo.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Halo Infinite (Campagna)</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/hitman.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/hitman.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/hitman.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/hitman.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>HITMAN World of Assassination</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/mortal%20kombat.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/mortal%20kombat.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/mortal%20kombat.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/mortal%20kombat.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Mortal Kombat 11</span>
+              </div>
+            </a>
+          </div>
+          <div class="cloud_cards">
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width:1023px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/768px/wolong.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1365px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1023px/wolong.jpg
+                  "
+                />
+                <source
+                  media="(max-width:1919px)"
+                  srcset="
+                    ./assets/images/piu%20diffusi%20sul%20cloud/1365px/wolong.jpg
+                  "
+                />
+                <img
+                  src="./assets/images/piu diffusi%20sul%20cloud/1920px/wolong.jpg
+                  "
+                  alt=""
+                />
+              </picture>
+              <div class="svg_container">
+                <div class="gamepass_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="374 410 1300 1242"
+                    width="1em"
+                    height="1em"
+                    class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
+                    id="gpb-:r4t:"
+                    aria-label="Disponibile tramite Game Pass"
+                    role="img"
+                  >
+                    <path
+                      d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="joypad_img_container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                    width="1em"
+                    height="1em"
+                    class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA"
+                  >
+                    <path
+                      d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="cloud_cards_txt">
+                <span>Wo Long: Fallen Dynasty</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <div id="first_section_wrapper"> 
-    <div id="big_cards_container">
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>Need for Speed Heat</h2>
-            <p>Datti da fare di giorno e rischia tutto di notte</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
+    <div id="gamepass_container">
+      <div id="added_recently">
+        <div class="card_text"></div>
+        <div id="gamepass_cards"></div>
       </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>Coffe Talk - Episodio 2</h2>
-            <p>Hibiscus & Butterfly</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
+      <div id="soon_not_available">
+        <div class="card_text"></div>
+        <div class="soon_cards"></div>
       </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>Valheim</h2>
-            <p>Mettiti alla prova di fronte a Odino</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
+      <div id="genre">
+        <div class="card_text"></div>
+        <div id="colored_cards"></div>
       </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>7 Days to Die</h2>
-            <p>Sopravvivi in ciò che resta dopo la caduta della civiltà</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>Halo infinite</h2>
-            <p>Il ritorno di Master Chief</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>As Dusk Falls</h2>
-            <p>Ogni famiglia ha dei segreti. Ogni segreto ha un prezzo</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>Dragon Age 2</h2>
-            <p>Diventa il campione di Kirkwall</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div class="big_cards">
-        <a href="#">
-          <div class="big_card_text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-              class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-              aria-label="Disponibile tramite Game Pass" role="img">
-              <path
-                d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-              </path>
-            </svg>
-            <h2>ARK: Ultimate Survivor Edition</h2>
-            <p>La più grande avventura con dinosauri di tutti i tempi</p>
-          </div>
-          <div class="joypad_img_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-              class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-              <path
-                d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-              </path>
-            </svg>
-          </div>
-        </a>
+      <div id="all_games">
+        <div class="card_text"></div>
+        <div id="all_games_cards"></div>
+        <div id="show_all"></div>
       </div>
     </div>
-    <div id="cloud_wrapper"> 
-      <div class="card_text">
-        <h2 class="h2">Più diffusi sul cloud</h2>
-        <a href="#" class="mostra_tutto">Mostra tutto</a>
+    <footer>
+      <div id="footer_container">
+        <div id="columns_container"></div>
+        <div id="row_container"></div>
       </div>
-      <div class="cloud_cards_container">
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/fortnite.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg style="display: none" xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em"
-                  height="1em" class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA"
-                  id="gpb-:r4t:" aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Fortnite</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/atomic heart.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Atomic Heart</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/battlefield.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Battlefield™ 2042 Xbox Series X|S</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/farming simulator.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Farming Simulator 22</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/forza horizon.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Forza Horizon 5 Edizione standard</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/ghost recon.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Tom Clancy's Ghost Recon® Wildlands - Standard Edition</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/halo.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Halo Infinite (Campagna)</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/hitman.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>HITMAN World of Assassination</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/mortal kombat.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Mortal Kombat 11</span>
-            </div>
-          </a>
-        </div>
-        <div class="cloud_cards">
-          <a href="#">
-            <img src="./assets/images/piu diffusi sul cloud/1365px/wolong.jpg" alt="" />
-            <div class="svg_container">
-              <div class="gamepass_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="374 410 1300 1242" width="1em" height="1em"
-                  class="GamePassBadge-module__gamepassBadge___STvpK Icon-module__icon___6ICyA" id="gpb-:r4t:"
-                  aria-label="Disponibile tramite Game Pass" role="img">
-                  <path
-                    d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z">
-                  </path>
-                </svg>
-              </div>
-              <div class="joypad_img_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="1em" height="1em"
-                  class="Badge-module__icon___MU5HK Icon-module__icon___6ICyA Icon-module__xxSmall___vViZA">
-                  <path
-                    d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-            <div class="cloud_cards_txt">
-              <span>Wo Long: Fallen Dynasty</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="gamepass_container">
-    <div id="added_recently">
-      <div class="card_text"></div>
-      <div id="gamepass_cards"></div>
-    </div>
-    <div id="soon_not_available">
-      <div class="card_text"></div>
-      <div class="soon_cards"></div>
-    </div>
-    <div id="genre">
-      <div class="card_text"></div>
-      <div id="colored_cards"></div>
-    </div>
-    <div id="all_games">
-      <div class="card_text"></div>
-      <div id="all_games_cards"></div>
-      <div id="show_all"></div>
-    </div>
-  </div>
-  <footer>
-    <div id="footer_container">
-      <div id="columns_container"></div>
-      <div id="row_container"></div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
