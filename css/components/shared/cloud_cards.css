@@ -12,15 +12,6 @@
 #first_section_wrapper
   #cloud_wrapper
   .cloud_cards_container
-  .cloud_cards
-  a
-  img {
-  display: block;
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
   .cloud_cards:nth-child(3)
   a
   .cloud_cards_txt {
@@ -101,22 +92,13 @@
   .cloud_cards_container
   .cloud_cards
   a
-  .gamepass_img_container {
-  height: 32px;
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
-  a
   .gamepass_img_container
   svg {
   margin: 8px;
-  width: 26px;
+  width: 24px;
   height: 16px;
   fill: white;
-  background-color: black;
+  background-color: transparent;
 }
 
 #first_section_wrapper
@@ -173,23 +155,4 @@
   span {
   color: white;
   float: left;
-}
-
-@media screen and (max-width: 767px) {
-  #first_section_wrapper #cloud_wrapper .cloud_cards_container,
-  #first_section_wrapper #cloud_wrapper .card_text {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards
-    a
-    img {
-    min-width: 156px;
-  }
 }
