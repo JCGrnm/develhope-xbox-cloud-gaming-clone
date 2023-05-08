@@ -31,6 +31,10 @@
     background-color: #ffffff1a;
 }
 
+#first_section_wrapper #big_cards_container .big_cards a:active::after {
+    background-color: #0000001a;
+}
+
 #first_section_wrapper #big_cards_container .big_cards a .big_card_text {
     display: flex;
     flex-direction: column;
