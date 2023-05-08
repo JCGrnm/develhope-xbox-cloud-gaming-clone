@@ -36,6 +36,10 @@ nav #nav_wrapper #nav_left button:hover {
     background-color: #515863;
 }
 
+nav #nav_wrapper #nav_left button:active {
+    background-color: #222428;
+}
+
 nav #nav_wrapper #nav_left a {
     display: flex;
     justify-content: center;
@@ -58,6 +62,10 @@ nav #nav_wrapper #nav_left a svg {
 
 nav #nav_wrapper #nav_left a:hover {
     background-color: #515863;
+}
+
+nav #nav_wrapper #nav_left a:active {
+    background-color: #222428;
 }
 
 nav #nav_wrapper #nav_right {
@@ -133,8 +141,12 @@ nav #nav_wrapper #nav_right form button.search_button svg {
     fill: white;
 }
 
-nav #nav_wrapper #nav_right form button:hover {
+nav #nav_wrapper #nav_right form button.search_button:hover {
     background-color: #515863;
+}
+
+nav #nav_wrapper #nav_right form button.search_button:active {
+    background-color: #222428;
 }
 
 nav #nav_wrapper #nav_right form #search_bar_focus {
@@ -247,6 +259,7 @@ nav #nav_wrapper #nav_right button.account_button {
     background-color: #484e58;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 nav #nav_wrapper #nav_right button.account_button svg {
@@ -255,6 +268,20 @@ nav #nav_wrapper #nav_right button.account_button svg {
 
 nav #nav_wrapper #nav_right button.account_button:hover {
     background-color: #515863;
+}
+
+nav #nav_wrapper #nav_right button.account_button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+}
+
+nav #nav_wrapper #nav_right button.account_button:active::after {
+    background-color: #0000001a;
 }
 
 @media screen and (min-width:1920px) {
