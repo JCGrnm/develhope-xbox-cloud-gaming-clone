@@ -1,0 +1,177 @@
+#gamepass_container #all_games .card_text {
+  margin-bottom: 16px;
+}
+
+#gamepass_container #all_games .card_text,
+#gamepass_container #all_games #all_games_cards_container {
+  padding: 0 80px;
+}
+
+#gamepass_container #all_games #all_games_cards_container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  padding-bottom: 24px;
+}
+
+#gamepass_container #all_games #all_games_cards_container .all_games_card {
+  max-width: calc(10% - 14.4px);
+}
+
+#gamepass_container #all_games #all_games_cards_container .all_games_card a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a
+  img {
+  width: 100%;
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a
+  .joypad_img_container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000b3;
+  border-top-left-radius: 4px;
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a
+  .joypad_img_container
+  svg {
+  fill: white;
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a
+  .all_games_card_txt {
+  position: absolute;
+  bottom: 0;
+  padding: 4px 8px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background-color: rgba(0, 0, 0, 0.653);
+  color: white;
+  transform: translateY(72px);
+  transition: 0.1s ease-in;
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a:hover
+  .all_games_card_txt {
+  transform: translateY(0);
+}
+
+#gamepass_container
+  #all_games
+  #all_games_cards_container
+  .all_games_card
+  a:hover
+  .joypad_img_container {
+  transform: translateY(32px);
+}
+
+@media screen and (max-width: 1919px) {
+  #gamepass_container #all_games .card_text,
+  #gamepass_container #all_games #all_games_cards_container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  #gamepass_container
+    #all_games
+    #all_games_cards_container
+    .all_games_card:nth-child(25),
+  .all_games_card:nth-child(26),
+  .all_games_card:nth-child(27),
+  .all_games_card:nth-child(28),
+  .all_games_card:nth-child(29),
+  .all_games_card:nth-child(30) {
+    display: none;
+  }
+  #gamepass_container #all_games #all_games_cards_container .all_games_card {
+    max-width: calc(12.5% - 14px);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  #gamepass_container
+    #all_games
+    #all_games_cards_container
+    .all_games_card:nth-child(19),
+  .all_games_card:nth-child(20),
+  .all_games_card:nth-child(21),
+  .all_games_card:nth-child(22),
+  .all_games_card:nth-child(23),
+  .all_games_card:nth-child(24) {
+    display: none;
+  }
+  #gamepass_container #all_games #all_games_cards_container .all_games_card {
+    max-width: calc(16.66667% - 13.33333px);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #gamepass_container
+    #all_games
+    #all_games_cards_container
+    .all_games_card:nth-child(16),
+  .all_games_card:nth-child(17),
+  .all_games_card:nth-child(18) {
+    display: none;
+  }
+  #gamepass_container #all_games #all_games_cards_container .all_games_card {
+    max-width: calc(20% - 12.8px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #gamepass_container #all_games .card_text,
+  #gamepass_container #all_games #all_games_cards_container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  #gamepass_container
+    #all_games
+    #all_games_cards_container
+    .all_games_card:nth-child(13),
+  .all_games_card:nth-child(14),
+  .all_games_card:nth-child(15) {
+    display: none;
+  }
+  #gamepass_container #all_games #all_games_cards_container .all_games_card {
+    max-width: calc(25% - 12px);
+  }
+}
