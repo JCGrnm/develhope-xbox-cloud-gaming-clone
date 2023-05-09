@@ -37,17 +37,17 @@
   background-color: #222428;
 }
 
-@media screen and (max-width: 1023px) {
-  .card_text {
-    margin-bottom: 16px;
-  }
-}
-
 @media screen and (max-width: 1365px) {
   .h2 {
     font-size: 20px;
   }
   .card_text {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card_text {
+    margin-bottom: 16px;
   }
 }
