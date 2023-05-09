@@ -58,6 +58,10 @@
   background-color: #ffffff1a;
 }
 
+.genre .genre__content__card a:active::after {
+  background-color: #0000001a;
+}
+
 .genre .genre__content__card a .genre__content__card__svg {
   position: absolute;
 
@@ -98,5 +102,11 @@
   }
   .genre .genre__content__card {
     max-width: calc(100% / 3 - 14px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .genre {
+    padding: 0 80px;
   }
 }
