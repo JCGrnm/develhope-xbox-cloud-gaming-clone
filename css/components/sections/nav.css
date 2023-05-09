@@ -304,3 +304,12 @@ nav #nav_wrapper #nav_right button.account_button:active::after {
         display: initial;
     }
 }
+
+ /* FEATURE-BOTTONE-ACCEDI */
+
+ @media screen and (max-width:1023px) {
+    nav #nav_wrapper #nav_right .accedi_container {
+        display: none; }
+    }
+
+  /* FEATURE-BOTTONE-ACCEDI */
