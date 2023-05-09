@@ -1,12 +1,13 @@
 #first_section_wrapper #cloud_wrapper .cloud_cards_container .cloud_cards a {
   position: relative;
-  border-radius: 5px;
+  border-radius: 4px;
   overflow: hidden;
   align-items: flex-end;
   justify-content: flex-end;
   display: flex;
   height: 100%;
   width: 100%;
+  box-shadow: 0 1.8px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
 #first_section_wrapper
@@ -21,56 +22,17 @@
 #first_section_wrapper
   #cloud_wrapper
   .cloud_cards_container
-  .cloud_cards:nth-child(3)
-  a
-  .cloud_cards_txt {
-  transition: 0.3s;
-  transform: translateY(53px);
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards:nth-child(5)
-  a
-  .cloud_cards_txt {
-  transition: 0.3s;
-  transform: translateY(53px);
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards:nth-child(6)
-  a
-  .cloud_cards_txt {
-  transition: 0.3s;
-  transform: translateY(74px);
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards:nth-child(8)
-  a
-  .cloud_cards_txt {
-  transition: 0.3s;
-  transform: translateY(53px);
-}
-
-#first_section_wrapper
-  #cloud_wrapper
-  .cloud_cards_container
   .cloud_cards
   a
   .cloud_cards_txt {
   width: 100%;
-  padding: 5px 0 6px 0;
+  padding: 4px 8px;
+  line-height: 1.5;
   position: absolute;
   padding-left: 10px;
   background-color: rgba(0, 0, 0, 0.653);
-  transform: translateY(32px);
-  transition: 0.3s;
+  transform: translateY(100%);
+  transition: 0.1s;
 }
 
 #first_section_wrapper
@@ -124,13 +86,13 @@
   .cloud_cards
   a
   .joypad_img_container {
-  background-color: rgba(0, 0, 0, 0.653);
+  background-color: #000000b3;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 32px;
   width: 32px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 4px;
 }
 
 #first_section_wrapper
@@ -139,10 +101,7 @@
   .cloud_cards
   a:hover
   .svg_container
-  .joypad_img_container {
-  transform: translateY(32px);
-}
-
+  .joypad_img_container,
 #first_section_wrapper
   #cloud_wrapper
   .cloud_cards_container
@@ -150,7 +109,7 @@
   a:hover
   .svg_container
   .gamepass_img_container {
-  transform: translateY(32px);
+  transform: translateY(100%);
 }
 
 #first_section_wrapper
@@ -191,56 +150,13 @@
     img {
     min-width: 156px;
   }
-
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards:nth-child(4)
-    a
-    .cloud_cards_txt {
-    transition: 0.3s;
-    transform: translateY(53px);
-  }
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards
-    a:hover
-    .cloud_cards_txt {
-    transform: translateY(0);
-  }
 }
 
-@media screen and (max-width: 1365px) {
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards:nth-child(7)
-    a
-    .cloud_cards_txt,
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards:last-child
-    a
-    .cloud_cards_txt {
-    transition: 0.3s;
-    transform: translateY(53px);
-  }
-  #first_section_wrapper
-    #cloud_wrapper
-    .cloud_cards_container
-    .cloud_cards
-    a:hover
-    .cloud_cards_txt {
-    transform: translateY(0);
-  }
-}
-
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   #first_section_wrapper #cloud_wrapper .cloud_cards_container,
   #first_section_wrapper #cloud_wrapper .card_text {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
+

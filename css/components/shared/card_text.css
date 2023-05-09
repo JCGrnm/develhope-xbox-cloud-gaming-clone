@@ -29,7 +29,7 @@
 }
 
 .mostra_tutto:hover {
-  background-color: #515863;
+  background-color: rgba(255, 255, 255, 0.35);
   border-radius: 3px;
 }
 
@@ -37,8 +37,17 @@
   background-color: #222428;
 }
 
+@media screen and (max-width: 1023px) {
+  .card_text {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (max-width: 1365px) {
   .h2 {
     font-size: 20px;
+  }
+  .card_text {
+    margin-bottom: 15px;
   }
 }
