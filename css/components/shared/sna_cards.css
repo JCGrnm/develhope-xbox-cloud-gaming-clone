@@ -1,0 +1,123 @@
+#sna_wrapper {
+  padding: 0 48px;
+  margin-bottom: 40px;
+}  
+
+#sna_wrapper .title {
+  font-family: Bahnschrift;
+  color: white;
+  font-size: 26px;
+  font-weight: unset;
+  margin-bottom: 16px;
+}
+
+ #sna_wrapper .sna_container .sna_card a {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 1.8px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+#sna_wrapper .sna_container {
+  display: flex;
+  gap: 16px;
+}
+
+#sna_wrapper .sna_container .sna_card picture {
+  width: 100%;
+  min-width: 478px; 
+ /* max-width: 612px;  */
+  height: 269px;
+  border-radius: 4px;
+  
+}
+
+.icon_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon_container div {
+  padding: 4px;
+}
+
+/* animation */
+#sna_wrapper .sna_container .sna_text {
+  width: 100%;
+  padding: 4px 8px;
+  line-height: 1.5;
+  position: absolute;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.653);
+  transform: translateY(100%);
+  transition: 0.1s;
+}
+
+#sna_wrapper .sna_container a:hover .sna_text {
+  opacity: 1;
+  transform: translateY(0);
+  bottom: 0;
+  color: white;
+}
+
+/* icons */
+#sna_wrapper .sna_container .icon_container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#sna_wrapper .sna_container .sna_card a .gamepass_img_container {
+  height: 32px;
+}
+
+#sna_wrapper .sna_container .sna_card a .gamepass_img_container svg {
+  margin: 2px;
+  width: 26px;
+  height: 16px;
+  fill: white;
+  background-color: #000000b3;
+}
+
+#sna_wrapper
+  .sna_container
+  .sna_card
+  a:hover
+  .icon_container
+  .gamepass_img_container,
+#sna_wrapper
+  .sna_container
+  .sna_card
+  a:hover
+  .icon_container
+  .joypad_img_container {
+  transform: translateY(100%);
+}
+
+#sna_wrapper .sna_container .sna_card a .joypad_img_container {
+  background-color: #000000b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-top-left-radius: 4px;
+}
+
+.joypad_img_container svg {
+  fill: white;
+  border-top-left-radius: 4px;
+}
+
+/* media queries? */
+
+
+
