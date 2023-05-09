@@ -1,315 +1,370 @@
 nav #nav_wrapper {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    margin: 24px 0;
-    padding: 0 48px 0 42px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  margin: 24px 0;
+  padding: 0 48px 0 42px;
 }
 
 nav #nav_wrapper #nav_left {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
 }
 
 nav #nav_wrapper #nav_left button {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    padding: 6px 0;
-    width: 40px;
-    text-decoration: none;
-    border-radius: 100%;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 6px 0;
+  width: 40px;
+  text-decoration: none;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 nav #nav_wrapper #nav_left button svg {
-    fill: white;
-    background-color: transparent;
+  fill: white;
+  background-color: transparent;
 }
 
 nav #nav_wrapper #nav_left button:hover {
-    background-color: #515863;
+  background-color: #515863;
 }
 
 nav #nav_wrapper #nav_left button:active {
-    background-color: #222428;
+  background-color: #222428;
 }
 
 nav #nav_wrapper #nav_left a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: unset;
-    border-radius: 4px;
-    padding: 0 8px;
-    color: white;
-    height: 100%;
-    font-size: 14px;
-    font-family: Bahnschrift semibold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: unset;
+  border-radius: 4px;
+  padding: 0 8px;
+  color: white;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Bahnschrift semibold";
+  font-weight: 400;
 }
 
 nav #nav_wrapper #nav_left a svg {
-    fill: white;
-    background-color: transparent;
-    margin: 0px 0 2px 8px;
+  fill: white;
+  background-color: transparent;
+  margin: 0px 0 2px 8px;
 }
 
 nav #nav_wrapper #nav_left a:hover {
-    background-color: #515863;
+  background-color: #515863;
 }
 
 nav #nav_wrapper #nav_left a:active {
-    background-color: #222428;
+  background-color: #222428;
 }
 
 nav #nav_wrapper #nav_right {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
+  height: 100%;
 }
-  /* FEATURE-BOTTONE-ACCEDI */
+/* FEATURE-BOTTONE-ACCEDI */
 nav #nav_wrapper #nav_right .accedi_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #008746;
-    z-index: 0;
-    min-width: 248px;
-    height: 40px;
-    box-sizing: border-box;
-    border: 2px solid #00000000;
-    }
-    
-    nav #nav_wrapper #nav_right .accedi_container a {
-    font-family: Bahnschrift semibold;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    word-break: break-word;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;
-    
-    }
-    
-    nav #nav_wrapper #nav_right .accedi_container:hover {
-    
-    fill: #fff;
-    background-color: #04b358;
-    border: 2px solid #00000000;
-    color: #fff;
-    cursor: pointer;
-    }
-    
-    nav #nav_wrapper #nav_right .accedi_container:active {
-    fill: #fff;
-    background-color: #044e2a;
-    border: 2px solid #00000000;
-    color: #fff;
-    cursor: pointer;
-    }
-    
-    /* FEATURE-BOTTONE-ACCEDI */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #008746;
+  z-index: 0;
+  min-width: 248px;
+  box-sizing: border-box;
+  border: 2px solid #00000000;
+}
+
+nav #nav_wrapper #nav_right .accedi_container a {
+  font-family: "Bahnschrift semibold";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  word-break: break-word;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+}
+
+nav #nav_wrapper #nav_right .accedi_container:hover {
+  fill: #fff;
+  background-color: #04b358;
+  border: 2px solid #00000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav #nav_wrapper #nav_right .accedi_container:active {
+  fill: #fff;
+  background-color: #044e2a;
+  border: 2px solid #00000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* FEATURE-BOTTONE-ACCEDI */
 
 nav #nav_wrapper #nav_right form button.search_button {
-    background-color: transparent;
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 40px;
-    text-decoration: none;
-    border-radius: 100%;
-    border: none;
-    cursor: pointer;
-    display: none;
-    padding-top: 2px;
+  background-color: transparent;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2px 9px 0;
+  text-decoration: none;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
 nav #nav_wrapper #nav_right form button.search_button svg {
-    fill: white;
+  fill: white;
 }
 
 nav #nav_wrapper #nav_right form button.search_button:hover {
-    background-color: #515863;
+  background-color: #515863;
 }
 
 nav #nav_wrapper #nav_right form button.search_button:active {
-    background-color: #222428;
+  background-color: #222428;
 }
 
 nav #nav_wrapper #nav_right form #search_bar_focus {
-    min-width: 288px;
-    height: 100%;
-    position: relative;
+  min-width: 288px;
+  height: 100%;
+  position: relative;
 }
 
 nav #nav_wrapper #nav_right form #search_bar_focus::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    left: -6px;
-    bottom: -6px;
-    border-top-left-radius: 999px;
-    border-bottom-left-radius: 999px;
-    border-top-right-radius: 999px;
-    border-bottom-right-radius: 999px;
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  bottom: -6px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
 }
 
-nav #nav_wrapper #nav_right form:focus-within #search_bar_focus::before  {
-    border: 2px solid white;
+nav #nav_wrapper #nav_right form:focus-within #search_bar_focus::before {
+  border: 2px solid white;
 }
-
 
 nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 0 1px #6b7584;
-    border-top-left-radius: 999px;
-    border-bottom-left-radius: 999px;
-    border-top-right-radius: 999px;
-    border-bottom-right-radius: 999px;
-    display: flex;
-    align-items: center;
-    background-color: #000000b3;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 1px #6b7584;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  display: flex;
+  align-items: center;
+  background-color: #000000b3;
+  position: relative;
+  overflow: hidden;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container svg.SmallScreenSearchIconButton-module__icon___pnlay {
-    fill: #ffffffa6;
-    margin: 1px 0 1px 16px;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  svg.SmallScreenSearchIconButton-module__icon___pnlay {
+  fill: #ffffffa6;
+  margin: 1px 0 1px 16px;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search {
-    height: 100%;
-    border: none;
-    background-color: transparent;
-    flex-grow: 1;
-    outline: none;
-    font-size: 16px;
-    font-weight: 400;
-    caret-color: #008746;
-    z-index: 1;
-    color: #ffffffa6;
-    margin:0 18px;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  input#search {
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  caret-color: #008746;
+  z-index: 1;
+  color: #ffffffa6;
+  margin: 0 18px;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search::selection {
-    background-color: #008746;
-    color: white;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  input#search::selection {
+  background-color: #008746;
+  color: white;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search::placeholder {
-    color: #ffffffa6;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  input#search::placeholder {
+  color: #ffffffa6;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input::-webkit-search-cancel-button {
-    display: none;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  input::-webkit-search-cancel-button {
+  display: none;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button {
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 100%;
-    border-radius: 100%;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 100%;
+  border-radius: 100%;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container input#search:not(:placeholder-shown)~button {
-    position: relative;
-    left: -8px;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  input#search:not(:placeholder-shown)
+  ~ button {
+  position: relative;
+  left: -8px;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button:hover {
-    background-color: #484e58;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  button:hover {
+  background-color: #484e58;
 }
 
-nav #nav_wrapper #nav_right form #search_bar_focus #search_bar_container button svg {
-    fill: white;
+nav
+  #nav_wrapper
+  #nav_right
+  form
+  #search_bar_focus
+  #search_bar_container
+  button
+  svg {
+  fill: white;
 }
 
 nav #nav_wrapper #nav_right button.account_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 8px;
-    text-decoration: none;
-    border-radius: 100%;
-    background-color: #484e58;
-    border: none;
-    cursor: pointer;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 8px 8px;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: #484e58;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }
 
 nav #nav_wrapper #nav_right button.account_button svg {
-    fill: white;
+  fill: white;
 }
 
 nav #nav_wrapper #nav_right button.account_button:hover {
-    background-color: #515863;
+  background-color: #515863;
 }
 
 nav #nav_wrapper #nav_right button.account_button::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 100%;
 }
 
 nav #nav_wrapper #nav_right button.account_button:active::after {
-    background-color: #0000001a;
+  background-color: #0000001a;
 }
 
-@media screen and (min-width:1920px) {
-    nav #nav_wrapper {
-        padding: 0 80px 0 74px;
-    }
+@media screen and (min-width: 1920px) {
+  nav #nav_wrapper {
+    padding: 0 80px 0 74px;
+  }
 }
 
-@media screen and (max-width:767px) {
-    nav #nav_wrapper {
-        padding-left: 26px;
-        padding-right: 32px;
-    }
+@media screen and (max-width: 767px) {
+  nav #nav_wrapper {
+    padding-left: 26px;
+    padding-right: 32px;
+  }
 
-    nav #nav_wrapper #nav_right form #search_bar_focus {
-        display: none;
-    }
+  nav #nav_wrapper #nav_right form #search_bar_focus {
+    display: none;
+  }
 
-    nav #nav_wrapper #nav_right form button.search_button {
-        display: initial;
-    }
+  nav #nav_wrapper #nav_right form button.search_button {
+    display: initial;
+  }
 }
 
- /* FEATURE-BOTTONE-ACCEDI */
+/* FEATURE-BOTTONE-ACCEDI */
 
- @media screen and (max-width:1023px) {
-    nav #nav_wrapper #nav_right .accedi_container {
-        display: none; }
-    }
+@media screen and (max-width: 1023px) {
+  nav #nav_wrapper #nav_right .accedi_container {
+    display: none;
+  }
+}
 
-  /* FEATURE-BOTTONE-ACCEDI */
+/* FEATURE-BOTTONE-ACCEDI */
