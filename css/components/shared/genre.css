@@ -1,0 +1,102 @@
+.genre {
+  padding: 0 48px;
+  margin-bottom: 40px;
+}
+
+.genre .genre__text {
+  margin-bottom: 16px;
+}
+
+.genre .genre__content {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+}
+
+.genre .genre__content__card {
+  width: 100%;
+  min-width: 129px;
+  max-width: calc(100% / 8 - 14px);
+  height: 96px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.genre .genre__content__card a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #008746;
+  position: relative;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.genre .genre__content__card:nth-child(4) a,
+.genre .genre__content__card:nth-child(5) a,
+.genre .genre__content__card:nth-child(6) a {
+  background-color: #008572;
+}
+
+.genre .genre__content__card:nth-child(7) a,
+.genre .genre__content__card:nth-child(8) a {
+  background-color: #007c8f;
+}
+
+.genre .genre__content__card a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.genre .genre__content__card a:hover::after {
+  background-color: #ffffff1a;
+}
+
+.genre .genre__content__card a .genre__content__card__svg {
+  position: absolute;
+
+  fill: white;
+}
+
+.genre .genre__content__card a .genre__content__card__svg svg {
+  height: 26px;
+  width: 26px;
+  opacity: 0.5;
+}
+
+.genre .genre__content__card a .genre__content__card__txt {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.genre .genre__content__card a .genre__content__card__txt span {
+  font-family: "Bahnschrift Semibold", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1365px) {
+  .genre {
+    margin-bottom: 32px;
+  }
+  .genre .genre__content__card {
+    max-width: calc(100% / 4 - 14px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .genre {
+    padding: 0 32px;
+  }
+  .genre .genre__content__card {
+    max-width: calc(100% / 3 - 14px);
+  }
+}
