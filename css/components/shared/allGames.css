@@ -1,0 +1,176 @@
+.gamepass__wrapper .allGames .allGames__text {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gamepass__wrapper .allGames .allGames__text,
+.gamepass__wrapper .allGames .allGames__content {
+  padding: 0 80px;
+}
+
+.gamepass__wrapper .allGames .allGames__content {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  padding-bottom: 24px;
+}
+
+.gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+  max-width: calc(10% - 14.4px);
+}
+
+.gamepass__wrapper .allGames .allGames__content .allGames__content__card a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gamepass__wrapper .allGames .allGames__content .allGames__content__card a img {
+  width: 100%;
+}
+
+.gamepass__wrapper
+  .allGames
+  .allGames__content
+  .allGames__content__card
+  a
+  .joypad_img_container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000b3;
+  border-top-left-radius: 4px;
+}
+
+.gamepass__wrapper
+  .allGames
+  .allGames__content
+  .allGames__content__card
+  a
+  .joypad_img_container
+  svg {
+  fill: white;
+}
+
+.gamepass__wrapper
+  .allGames
+  .allGames__content
+  .allGames__content__card
+  a
+  .allGames__content__card__text {
+  position: absolute;
+  bottom: 0;
+  padding: 4px 8px;
+  width: 100%;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background-color: rgba(0, 0, 0, 0.653);
+  color: white;
+  transform: translateY(100%);
+  transition: 0.1s ease-in;
+}
+
+.gamepass__wrapper
+  .allGames
+  .allGames__content
+  .allGames__content__card
+  a:hover
+  .allGames__content__card__text {
+  transform: translateY(0);
+}
+
+.gamepass__wrapper
+  .allGames
+  .allGames__content
+  .allGames__content__card
+  a:hover
+  .joypad_img_container {
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: 1919px) {
+  .gamepass__wrapper .allGames .allGames__text,
+  .gamepass__wrapper .allGames .allGames__content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .gamepass__wrapper
+    .allGames
+    .allGames__content
+    .allGames__content__card:nth-child(25),
+  .allGames__content__card:nth-child(26),
+  .allGames__content__card:nth-child(27),
+  .allGames__content__card:nth-child(28),
+  .allGames__content__card:nth-child(29),
+  .allGames__content__card:nth-child(30) {
+    display: none;
+  }
+  .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+    max-width: calc(12.5% - 14px);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .gamepass__wrapper
+    .allGames
+    .allGames__content
+    .allGames__content__card:nth-child(19),
+  .allGames__content__card:nth-child(20),
+  .allGames__content__card:nth-child(21),
+  .allGames__content__card:nth-child(22),
+  .allGames__content__card:nth-child(23),
+  .allGames__content__card:nth-child(24) {
+    display: none;
+  }
+  .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+    max-width: calc(16.66667% - 13.33333px);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .gamepass__wrapper
+    .allGames
+    .allGames__content
+    .allGames__content__card:nth-child(16),
+  .allGames__content__card:nth-child(17),
+  .allGames__content__card:nth-child(18) {
+    display: none;
+  }
+  .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+    max-width: calc(20% - 12.8px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gamepass__wrapper .allGames .allGames__text,
+  .gamepass__wrapper .allGames .allGames__content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .gamepass__wrapper
+    .allGames
+    .allGames__content
+    .allGames__content__card:nth-child(13),
+  .allGames__content__card:nth-child(14),
+  .allGames__content__card:nth-child(15) {
+    display: none;
+  }
+  .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+    max-width: calc(25% - 12px);
+  }
+}
