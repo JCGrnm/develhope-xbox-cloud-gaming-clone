@@ -1,9 +1,8 @@
 @import url(./sections/nav.css);
 @import url(./sections/first_section.css);
-@import url(./shared/card_grandi.css);
+@import url(./shared/firstItem.css);
 @import url(./shared/cloud_cards.css);
 @import url(./shared/card_text.css);
 @import url(./sections/gamepass.css);
 @import url(./shared/genre.css);
 @import url(./shared/allGames.css);
-
