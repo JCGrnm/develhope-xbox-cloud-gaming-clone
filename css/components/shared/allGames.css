@@ -140,6 +140,14 @@
   border-radius: 4px;
 }
 
+.gamepass__wrapper .allGames .allGames__showAll a:hover {
+  background-color: #515863;
+}
+
+.gamepass__wrapper .allGames .allGames__showAll a:active {
+  background-color: #222428;
+}
+
 @media screen and (max-width: 1919px) {
   .gamepass__wrapper .allGames .allGames__text,
   .gamepass__wrapper .allGames .allGames__content {
