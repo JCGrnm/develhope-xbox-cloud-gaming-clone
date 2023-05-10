@@ -122,6 +122,24 @@
   transform: translateY(100%);
 }
 
+.gamepass__wrapper .allGames .allGames__showAll {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 72px;
+}
+
+.gamepass__wrapper .allGames .allGames__showAll a {
+  font-family: "Bahnschrift Semibold";
+  text-decoration: none;
+  color: white;
+  background-color: #2d3036;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 60px;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 1919px) {
   .gamepass__wrapper .allGames .allGames__text,
   .gamepass__wrapper .allGames .allGames__content {
