@@ -1,3 +1,5 @@
+![CloudGaming_resize2](https://github.com/JCGrnm/xbox-gaming/assets/111151426/915abbc1-b071-44ea-a07a-8b4217bfd574)
+
 # Xbox Cloud Gaming (clone)
 
 Here is our very first Develhope Team Project: **Xbox Cloud Gaming static pages!**<br/>
