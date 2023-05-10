@@ -1,22 +1,26 @@
-.main__wrapper .firstItem__content .firstItem__content__card {
+.main__wrapper .firstItem .firstItem__content .firstItem__content__card {
   position: relative;
   box-shadow: 0px 1.8px 6px 0px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
 
-.main__wrapper .firstItem__content .firstItem__content__card a {
+.main__wrapper .firstItem .firstItem__content .firstItem__content__card a {
   text-decoration: none;
   position: relative;
 }
 
-.main__wrapper .firstItem__content .firstItem__content__card a img {
+.main__wrapper .firstItem .firstItem__content .firstItem__content__card a img {
   max-width: 872px;
   display: block;
   border-radius: 5.6px;
   height: 100%;
 }
 
-.main__wrapper .firstItem__content .firstItem__content__card a::after {
+.main__wrapper
+  .firstItem
+  .firstItem__content
+  .firstItem__content__card
+  a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -32,15 +36,24 @@
   );
 }
 
-.main__wrapper .firstItem__content .firstItem__content__card a:hover:after {
+.main__wrapper
+  .firstItem
+  .firstItem__content
+  .firstItem__content__card
+  a:hover:after {
   background-color: #ffffff1a;
 }
 
-.main__wrapper .firstItem__content .firstItem__content__card a:active::after {
+.main__wrapper
+  .firstItem
+  .firstItem__content
+  .firstItem__content__card
+  a:active::after {
   background-color: #0000001a;
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -55,6 +68,7 @@
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -67,6 +81,7 @@
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -80,6 +95,7 @@
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -90,6 +106,7 @@
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -109,6 +126,7 @@
 }
 
 .main__wrapper
+  .firstItem
   .firstItem__content
   .firstItem__content__card
   a
@@ -118,10 +136,16 @@
 }
 
 @media screen and (max-width: 1919px) {
-  .main__wrapper .firstItem__content .firstItem__content__card a img {
+  .main__wrapper
+    .firstItem
+    .firstItem__content
+    .firstItem__content__card
+    a
+    img {
     max-width: 626px;
   }
   .main__wrapper
+    .firstItem
     .firstItem__content
     .firstItem__content__card
     a
@@ -133,10 +157,16 @@
 }
 
 @media screen and (max-width: 1365px) {
-  .main__wrapper .firstItem__content .firstItem__content__card a img {
+  .main__wrapper
+    .firstItem
+    .firstItem__content
+    .firstItem__content__card
+    a
+    img {
     max-width: 551px;
   }
   .main__wrapper
+    .firstItem
     .firstItem__content
     .firstItem__content__card
     a
@@ -148,13 +178,18 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .main__wrapper .firstItem__content .firstItem__content__card a img {
+  .main__wrapper
+    .firstItem
+    .firstItem__content
+    .firstItem__content__card
+    a
+    img {
     width: min(500px, 100vw - 2 * 32px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .main__wrapper .firstItem__content {
+  .main__wrapper .firstItem .firstItem__content {
     padding-left: 32px;
     padding-right: 32px;
   }
