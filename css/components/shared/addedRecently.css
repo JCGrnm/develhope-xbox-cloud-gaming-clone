@@ -1,4 +1,17 @@
-.main__wrapper #cloud_wrapper .cloud_cards_container .cloud_cards a {
+.gamepass__wrapper .addedRecently .addedRecently__content {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 11.5px;
+  gap: 1rem;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
+  a {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
@@ -10,10 +23,19 @@
   box-shadow: 0 1.8px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
-.main__wrapper 
-  #cloud_wrapper 
-  .cloud_cards_container 
-  .cloud_cards 
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
+  a
+  img {
+  max-width: 206px;
+}
+
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a::after {
   content: "";
   position: absolute;
@@ -23,28 +45,29 @@
   left: 0;
 }
 
-.main__wrapper 
-  #cloud_wrapper 
-  .cloud_cards_container 
-  .cloud_cards 
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a:active::after {
   background-color: #0000001a;
 }
 
-.main__wrapper 
-  #cloud_wrapper 
-  .cloud_cards_container 
-  .cloud_cards 
-  a img {
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
+  a
+  img {
   display: block;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .cloud_cards_txt {
+  .addedRecently__content__card__txt {
   width: 100%;
   padding: 4px 8px;
   line-height: 1.5;
@@ -55,21 +78,21 @@
   transition: 0.1s;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a:hover
-  .cloud_cards_txt {
+  .addedRecently__content__card__txt {
   transform: translateY(0);
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .svg_container {
+  .addedRecently__content__card__svg {
   width: 100%;
   position: absolute;
   display: flex;
@@ -77,21 +100,21 @@
   align-items: flex-end;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .gamepass_img_container {
+  .addedRecently__content__card__svg__gamepass {
   height: 32px;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .gamepass_img_container
+  .addedRecently__content__card__svg__gamepass
   svg {
   margin: 8px;
   width: 26px;
@@ -100,12 +123,12 @@
   background-color: #000000b3;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .joypad_img_container {
+  .addedRecently__content__card__svg__joypad {
   background-color: #000000b3;
   display: flex;
   justify-content: center;
@@ -115,61 +138,89 @@
   border-top-left-radius: 4px;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a:hover
-  .svg_container
-  .joypad_img_container,
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+  .addedRecently__content__card__svg
+  .addedRecently__content__card__svg__joypad,
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a:hover
-  .svg_container
-  .gamepass_img_container {
+  .addedRecently__content__card__svg
+  .addedRecently__content__card__svg__gamepass {
   transform: translateY(100%);
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
   a
-  .joypad_img_container
+  .addedRecently__content__card__svg__joypad
   svg {
   fill: white;
   border-top-left-radius: 4px;
 }
 
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container
-  .cloud_cards
-  .cloud_cards_txt
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content
+  .addedRecently__content__card
+  a
+  .addedRecently__content__card__txt
   span {
   color: white;
   float: left;
 }
 
 @media screen and (min-width: 1920px) {
-  .main__wrapper #cloud_wrapper .cloud_cards_container,
-  .main__wrapper #cloud_wrapper .card_text {
+  .gamepass__wrapper .addedRecently .addedRecently__content,
+  .gamepass__wrapper .addedRecently .card_text {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 
+@media screen and (max-width: 1920px) {
+  .gamepass__wrapper
+    .addedRecently
+    .addedRecently__content
+    .addedRecently__content__card
+    a
+    img {
+    max-width: 198px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .gamepass__wrapper
+    .addedRecently
+    .addedRecently__content
+    .addedRecently__content__card
+    a
+    img {
+    max-width: 173px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
-  .main__wrapper #cloud_wrapper .cloud_cards_container .cloud_cards a img {
-    min-width: 156px;
+  .gamepass__wrapper
+    .addedRecently
+    .addedRecently__content
+    .addedRecently__content__card
+    a
+    img {
+    max-width: 156px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .main__wrapper #cloud_wrapper .cloud_cards_container,
-  .main__wrapper #cloud_wrapper .card_text {
+  .gamepass__wrapper .addedRecently .addedRecently__content,
+  .gamepass__wrapper .addedRecently .card_text {
     padding-left: 32px;
     padding-right: 32px;
   }
