@@ -1,7 +1,5 @@
 .gamepass__wrapper .sna {
-  padding: 0 80px; 
-  margin-bottom: 20px;
-  
+  padding-bottom: 9.5px;
 }
 
 .gamepass__wrapper .sna .sna__content {
@@ -9,7 +7,7 @@
   gap: 16px;
   padding-bottom: 20px;
   overflow-x: scroll;
-
+  padding: 0 80px 9.5px 80px;
 }
 
 .gamepass__wrapper .sna .sna__text {
@@ -18,8 +16,8 @@
   font-size: 26px;
   font-weight: unset;
   margin-bottom: 16px;
+  padding: 0 80px;
 }
-
 
 .gamepass__wrapper .sna .sna__content .sna__content__card a {
   display: flex;
@@ -50,6 +48,7 @@
 .gamepass__wrapper .sna .sna__content .sna__content__card a img {
   max-width: 306px;
   border-radius: 4px;
+  object-fit: cover;
   display: block;
 }
 
@@ -113,8 +112,7 @@
   .sna__content
   .sna__content__card
   a:hover
-  .svg_container
-  {
+  .svg_container {
   transform: translateY(100%);
 }
 
@@ -145,31 +143,59 @@
 }
 
 @media screen and (max-width: 1919px) {
-  .gamepass__wrapper .sna {
-     padding: 0 48px;
-  } 
+  .gamepass__wrapper .sna .sna__text,
+  .gamepass__wrapper .sna .sna__content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 
 @media screen and (max-width: 1365px) {
+  .gamepass__wrapper .sna,
+  .gamepass__wrapper .sna .sna__content {
+    padding-bottom: 4.5px;
+  }
   .gamepass__wrapper .sna .sna__content .sna__content__card a img {
- max-width: 297px;
+    max-width: 297px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .gamepass__wrapper .sna .sna__content .sna__content__card a img {
- max-width: 258px;
+    max-width: 258px;
   }
 }
 
- @media screen and (max-width: 767px) {
-  .gamepass__wrapper .sna {
-    padding: 0 32px;
-  } 
+@media screen and (max-width: 767px) {
+  .gamepass__wrapper .sna .sna__text,
+  .gamepass__wrapper .sna .sna__content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .gamepass__wrapper .sna .sna__content .sna__content__card a img {
     max-width: 244px;
   }
-} 
+}
 
+@media screen and (max-width: 479px) {
+  .gamepass__wrapper .sna,
+  .gamepass__wrapper .sna .sna__content {
+    padding-bottom: 6.5px;
+  }
 
+  @-moz-document url-prefix() {
+    .gamepass__wrapper .sna,
+    .gamepass__wrapper .sna .sna__content {
+      padding-bottom: 15px;
+    }
+  }
 
+  .gamepass__wrapper .sna .sna__text,
+  .gamepass__wrapper .sna .sna__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .gamepass__wrapper .sna .sna__content .sna__content__card a img {
+    max-width: 280px;
+  }
+}

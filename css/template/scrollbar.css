@@ -1,0 +1,64 @@
+.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar,
+.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar,
+.gamepass__wrapper .addedRecently .addedRecently__content::-webkit-scrollbar,
+.gamepass__wrapper .sna .sna__content::-webkit-scrollbar {
+  height: 18px;
+}
+
+.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar-track,
+.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar-track,
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content::-webkit-scrollbar-track,
+.gamepass__wrapper .sna .sna__content::-webkit-scrollbar-track {
+  background-color: #1e2023;
+}
+
+.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar-thumb,
+.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar-thumb,
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content::-webkit-scrollbar-thumb,
+.gamepass__wrapper .sna .sna__content::-webkit-scrollbar-thumb {
+  background-color: #767678;
+}
+
+.main__wrapper
+  .firstItem
+  .firstItem__content::-webkit-scrollbar-button:single-button:decrement,
+.main__wrapper
+  #cloud_wrapper
+  .cloud_cards_container::-webkit-scrollbar-button:single-button:decrement,
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content::-webkit-scrollbar-button:single-button:decrement,
+.gamepass__wrapper
+  .sna
+  .sna__content::-webkit-scrollbar-button:single-button:decrement {
+  background-color: #1c1d1f;
+  background-image: url("../../assets/images/svg\ img/scrollbar/left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 1.5px;
+  width: 16px;
+}
+
+.main__wrapper
+  .firstItem
+  .firstItem__content::-webkit-scrollbar-button:single-button:increment,
+.main__wrapper
+  #cloud_wrapper
+  .cloud_cards_container::-webkit-scrollbar-button:single-button:increment,
+.gamepass__wrapper
+  .addedRecently
+  .addedRecently__content::-webkit-scrollbar-button:single-button:increment,
+.gamepass__wrapper
+  .sna
+  .sna__content::-webkit-scrollbar-button:single-button:increment {
+  background-color: #1c1d1f;
+  background-image: url("../../assets/images/svg\ img/scrollbar/right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 3.5px;
+  width: 16px;
+}
