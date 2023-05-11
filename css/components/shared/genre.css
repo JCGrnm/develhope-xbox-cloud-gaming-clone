@@ -1,6 +1,6 @@
 .genre {
   padding: 0 48px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .genre .genre__text {
@@ -64,7 +64,6 @@
 
 .genre .genre__content__card a .genre__content__card__svg {
   position: absolute;
-
   fill: white;
 }
 
@@ -83,16 +82,27 @@
 }
 
 .genre .genre__content__card a .genre__content__card__txt span {
-  font-family: "Bahnschrift Semibold", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: Bahnschrift;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1920px) {
+  .genre {
+    padding: 0 80px;
+  }
 }
 
 @media screen and (max-width: 1365px) {
   .genre {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
   .genre .genre__content__card {
-    max-width: calc(100% / 4 - 14px);
+    max-width: calc(100% / 4 - 12px);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .genre {
+    margin-bottom: 32px;
   }
 }
 
@@ -101,12 +111,17 @@
     padding: 0 32px;
   }
   .genre .genre__content__card {
-    max-width: calc(100% / 3 - 14px);
+    max-width: calc(100% / 3 - 10.7px);
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 479px) {
   .genre {
-    padding: 0 80px;
+    padding: 0 16px;
+  }
+  .genre .genre__content__card {
+    min-width: 126px;
+    max-width: calc(100% / 2 - 8px);
+    line-height: 1.2;
   }
 }

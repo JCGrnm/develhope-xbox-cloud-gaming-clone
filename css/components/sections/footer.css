@@ -76,7 +76,7 @@ footer .footer__wrapper .footer__row {
   display: flex;
   height: 100%;
   justify-content: space-between;
-  padding: 30px 5% 16px;
+  padding: 29px 5% 19px;
   width: 100%;
   max-width: calc(1600px + 10%);
   margin: 0 auto;
@@ -127,14 +127,13 @@ footer .footer__wrapper .footer__row .footer__row__links {
   align-items: center;
   flex-wrap: wrap;
   margin: 3px 0;
+  gap: 4px 27px;
 }
 
 footer .footer__wrapper .footer__row .footer__row__links a {
   color: #a7a7a7;
   text-decoration: none;
   font-size: 11px;
-  padding-right: 27px;
-  padding-bottom: 4px;
   line-height: 1rem;
   position: relative;
 }
@@ -162,15 +161,21 @@ footer .footer__wrapper .footer__row .footer__row__links p {
   color: #a7a7a7;
   font-size: 11px;
   line-height: 1rem;
-  padding-bottom: 4px;
   padding-right: 24px;
-  padding-bottom: 4px;
 }
 
 footer .footer__wrapper .footer__row .footer__row__links p:hover {
   color: hsla(0, 0%, 100%, 0.9);
 }
 
+@media screen and (max-width: 1572px) {
+  footer .footer__wrapper .footer__row .footer__row__links {
+    margin-top: 1px;
+  }
+  footer .footer__wrapper .footer__row {
+    padding-bottom: 20px;
+  }
+}
 @media screen and (max-width: 1083px) {
   footer .footer__wrapper .footer__column {
     padding: 0 12px;
@@ -195,14 +200,17 @@ footer .footer__wrapper .footer__row .footer__row__links p:hover {
 
 @media screen and (max-width: 767px) {
   footer .footer__wrapper .footer__row {
-    padding-top: 30px;
+    padding-top: 28px;
+    padding-bottom: 16px;
   }
+
   footer .footer__wrapper .footer__row .footer__row__links {
-    margin-top: 12px;
+    margin-top: 20px;
+    gap: 6px 13px;
   }
   footer .footer__wrapper .footer__row .footer__row__links a,
   footer .footer__wrapper .footer__row .footer__row__links p {
-    padding: 6px 7px 0 6px;
+    padding: 0;
   }
 }
 

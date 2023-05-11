@@ -1,3 +1,15 @@
+.gamepass__wrapper .addedRecently {
+  padding-bottom: 11.5px;
+}
+
+.gamepass__wrapper .addedRecently .addedRecently__text {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
 .gamepass__wrapper .addedRecently .addedRecently__content {
   display: flex;
   overflow-x: scroll;
@@ -178,8 +190,12 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .gamepass__wrapper .addedRecently,
+  .gamepass__wrapper .addedRecently .addedRecently__content {
+    padding-bottom: 11.5px;
+  }
   .gamepass__wrapper .addedRecently .addedRecently__content,
-  .gamepass__wrapper .addedRecently .card_text {
+  .gamepass__wrapper .addedRecently .addedRecently__text {
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -197,6 +213,10 @@
 }
 
 @media screen and (max-width: 1365px) {
+  .gamepass__wrapper .addedRecently,
+  .gamepass__wrapper .addedRecently .addedRecently__content {
+    padding-bottom: 7px;
+  }
   .gamepass__wrapper
     .addedRecently
     .addedRecently__content
@@ -208,6 +228,12 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .gamepass__wrapper .addedRecently {
+    padding-bottom: 6.5px;
+  }
+  .gamepass__wrapper .addedRecently .addedRecently__content {
+    padding-bottom: 6.5px;
+  }
   .gamepass__wrapper
     .addedRecently
     .addedRecently__content
@@ -220,8 +246,36 @@
 
 @media screen and (max-width: 767px) {
   .gamepass__wrapper .addedRecently .addedRecently__content,
-  .gamepass__wrapper .addedRecently .card_text {
+  .gamepass__wrapper .addedRecently .addedRecently__text {
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .gamepass__wrapper .addedRecently,
+  .gamepass__wrapper .addedRecently .addedRecently__content {
+    padding-bottom: 7px;
+  }
+
+  @-moz-document url-prefix() {
+    .gamepass__wrapper .addedRecently,
+    .gamepass__wrapper .addedRecently .addedRecently__content {
+      padding-bottom: 14.5px;
+    }
+  }
+
+  .gamepass__wrapper .addedRecently .addedRecently__content,
+  .gamepass__wrapper .addedRecently .addedRecently__text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .gamepass__wrapper
+    .addedRecently
+    .addedRecently__content
+    .addedRecently__content__card
+    a
+    img {
+    max-width: 128px;
   }
 }

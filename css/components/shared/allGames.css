@@ -14,7 +14,6 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  overflow-y: hidden;
   padding-bottom: 24px;
 }
 
@@ -125,19 +124,25 @@
 .gamepass__wrapper .allGames .allGames__showAll {
   display: flex;
   justify-content: center;
-  width: 100%;
   padding-bottom: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .gamepass__wrapper .allGames .allGames__showAll a {
-  font-family: "Bahnschrift Semibold";
+  font-family: Bahnschrift;
+  font-weight: 600;
   text-decoration: none;
   color: white;
   background-color: #2d3036;
   font-size: 14px;
   line-height: 40px;
-  padding: 0 60px;
+  width: 100%;
+  max-width: 288px;
+
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .gamepass__wrapper .allGames .allGames__showAll a:hover {
@@ -188,6 +193,12 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .gamepass__wrapper .allGames .allGames__text {
+    margin-bottom: 15px;
+  }
+  .gamepass__wrapper .allGames .allGames__content {
+    gap: 16px;
+  }
   .gamepass__wrapper
     .allGames
     .allGames__content
@@ -217,5 +228,26 @@
   }
   .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
     max-width: calc(25% - 12px);
+  }
+}
+@media screen and (max-width: 479px) {
+  .gamepass__wrapper .allGames .allGames__text,
+  .gamepass__wrapper .allGames .allGames__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .gamepass__wrapper
+    .allGames
+    .allGames__content
+    .allGames__content__card:nth-child(10),
+  .allGames__content__card:nth-child(11),
+  .allGames__content__card:nth-child(12) {
+    display: none;
+  }
+  .gamepass__wrapper .allGames .allGames__content .allGames__content__card {
+    max-width: calc(33.3333% - 10.8px);
+  }
+  .gamepass__wrapper .allGames .allGames__showAll {
+    padding-bottom: 32px;
   }
 }
