@@ -5,6 +5,7 @@
 }
 
 .main__wrapper .firstItem .firstItem__content .firstItem__content__card a {
+  display: block;
   text-decoration: none;
   position: relative;
 }
