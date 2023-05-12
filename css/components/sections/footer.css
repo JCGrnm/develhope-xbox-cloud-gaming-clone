@@ -169,13 +169,18 @@ footer .footer__wrapper .footer__row .footer__row__links p:hover {
 }
 
 @media screen and (max-width: 1572px) {
-  footer .footer__wrapper .footer__row .footer__row__links {
-    margin-top: 1px;
-  }
   footer .footer__wrapper .footer__row {
+    padding-top: 31px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  footer .footer__wrapper .footer__row {
+    padding-top: 30px;
     padding-bottom: 20px;
   }
 }
+
 @media screen and (max-width: 1083px) {
   footer .footer__wrapper .footer__column {
     padding: 0 12px;

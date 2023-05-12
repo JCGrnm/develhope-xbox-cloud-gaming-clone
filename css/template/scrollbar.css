@@ -1,40 +1,54 @@
-.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar,
-.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar,
-.gamepass__wrapper .addedRecently .addedRecently__content::-webkit-scrollbar,
-.gamepass__wrapper .sna .sna__content::-webkit-scrollbar {
-  height: 18px;
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar {
+  height: 17px;
 }
 
-.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar-track,
-.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar-track,
-.gamepass__wrapper
-  .addedRecently
-  .addedRecently__content::-webkit-scrollbar-track,
-.gamepass__wrapper .sna .sna__content::-webkit-scrollbar-track {
+.primary-sections-wrapper
+  .base-section
+  .base-section__contente::-webkit-scrollbar-track,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-track,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-track,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar-track {
   background-color: #1e2023;
 }
 
-.main__wrapper .firstItem .firstItem__content::-webkit-scrollbar-thumb,
-.main__wrapper #cloud_wrapper .cloud_cards_container::-webkit-scrollbar-thumb,
-.gamepass__wrapper
-  .addedRecently
-  .addedRecently__content::-webkit-scrollbar-thumb,
-.gamepass__wrapper .sna .sna__content::-webkit-scrollbar-thumb {
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-thumb,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-thumb,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-thumb,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar-thumb {
   background-color: #767678;
 }
 
-.main__wrapper
-  .firstItem
-  .firstItem__content::-webkit-scrollbar-button:single-button:decrement,
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container::-webkit-scrollbar-button:single-button:decrement,
-.gamepass__wrapper
-  .addedRecently
-  .addedRecently__content::-webkit-scrollbar-button:single-button:decrement,
-.gamepass__wrapper
-  .sna
-  .sna__content::-webkit-scrollbar-button:single-button:decrement {
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-button:single-button:decrement,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-button:single-button:decrement,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-button:single-button:decrement,
+.gamepass-wrapper
+  .sna-section
+  .sna-section__content::-webkit-scrollbar-button:single-button:decrement {
   background-color: #1c1d1f;
   background-image: url("../../assets/images/svg\ img/scrollbar/left.svg");
   background-repeat: no-repeat;
@@ -43,18 +57,18 @@
   width: 16px;
 }
 
-.main__wrapper
-  .firstItem
-  .firstItem__content::-webkit-scrollbar-button:single-button:increment,
-.main__wrapper
-  #cloud_wrapper
-  .cloud_cards_container::-webkit-scrollbar-button:single-button:increment,
-.gamepass__wrapper
-  .addedRecently
-  .addedRecently__content::-webkit-scrollbar-button:single-button:increment,
-.gamepass__wrapper
-  .sna
-  .sna__content::-webkit-scrollbar-button:single-button:increment {
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-button:single-button:increment,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-button:single-button:increment,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-button:single-button:increment,
+.gamepass-wrapper
+  .sna-section
+  .sna-section__content::-webkit-scrollbar-button:single-button:increment {
   background-color: #1c1d1f;
   background-image: url("../../assets/images/svg\ img/scrollbar/right.svg");
   background-repeat: no-repeat;

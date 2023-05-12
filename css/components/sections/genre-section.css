@@ -1,0 +1,40 @@
+.gamepass-wrapper .genre-section {
+  margin-bottom: 41px;
+}
+
+.gamepass-wrapper .genre-section .genre-section__content {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+  padding: 0 48px;
+}
+
+@media screen and (min-width: 1920px) {
+  .gamepass-wrapper .genre-section .genre-section__content {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .gamepass-wrapper .genre-section {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .gamepass-wrapper .genre-section {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gamepass-wrapper .genre-section .genre-section__content {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 479px), screen and (max-height: 480px) {
+  .gamepass-wrapper .genre-section .genre-section__content {
+    padding: 0 16px;
+  }
+}
