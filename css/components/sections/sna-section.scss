@@ -1,12 +1,12 @@
 .gamepass-wrapper .sna-section {
   padding-bottom: 10.5px;
-}
-.gamepass-wrapper .sna-section__content {
-  display: flex;
-  gap: 16px;
-  padding-bottom: 20px;
-  overflow-x: scroll;
-  padding: 0 80px 9.5px 80px;
+  &__content {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    padding: 0 80px 9.5px 80px;
+  }
 }
 
 @media screen and (max-width: 1919px) {
@@ -15,39 +15,55 @@
     padding-right: 48px;
   }
 }
+
 @media screen and (max-width: 1365px) {
-  .gamepass-wrapper .sna-section, .gamepass-wrapper .sna-section__content {
-    padding-bottom: 5px;
+  .gamepass-wrapper .sna-section {
+    &,
+    &__content {
+      padding-bottom: 5px;
+    }
   }
 }
+
 @media screen and (max-width: 767px) {
   .gamepass-wrapper .sna-section .sna-section__content {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
+
 @media (max-height: 480px) {
   .gamepass-wrapper .sna-section .sna-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .sna-section, .gamepass-wrapper .sna-section__content {
-    padding-bottom: 9px;
+  .gamepass-wrapper .sna-section {
+    &,
+    &__content {
+      padding-bottom: 9px;
+    }
   }
 }
+
 @media screen and (max-width: 567px), screen and (max-height: 480px) {
-  .gamepass-wrapper .sna-section, .gamepass-wrapper .sna-section__content {
-    padding-bottom: 9.5px;
+  .gamepass-wrapper .sna-section {
+    &,
+    &__content {
+      padding-bottom: 9.5px;
+    }
   }
 }
+
 @media screen and (max-width: 479px) {
-  .gamepass-wrapper .sna-section, .gamepass-wrapper .sna-section .sna-section__content {
-    padding-bottom: 7px;
+  .gamepass-wrapper .sna-section {
+    &,
+    & .sna-section__content {
+      padding-bottom: 7px;
+    }
   }
+
   .gamepass-wrapper .sna-section .sna-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
-/*# sourceMappingURL=sna-section.css.map */

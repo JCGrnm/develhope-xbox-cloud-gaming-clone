@@ -3,7 +3,7 @@
 @import url(./sections/base-section.css);
 @import url(./sections/cloud-section.css);
 @import url(./sections/gamepass.css);
-@import url(./sections/added-recently-section.css);
+@import url(./sections/added-recently.css);
 @import url(./sections/sna-section.css);
 @import url(./sections/genre-section.css);
 @import url(./sections/all-games-section.css);
@@ -15,4 +15,4 @@
 @import url(./shared/svg-container.css);
 @import url(./shared/card-game--sm.css);
 @import url(./shared/card-genre.css);
-@import url(./shared/card-game-xs.css);
+@import url(./shared/card-game--xs.css);

@@ -4,33 +4,33 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 48px;
-}
-.section-text h2 {
-  font-family: Bahnschrift;
-  color: white;
-  font-size: 26px;
-  font-weight: unset;
-}
-.section-text a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-  width: 125px;
-  height: 24px;
-  font-size: 16px;
-  font-weight: unset;
-  text-decoration: none;
-  color: white;
-  padding-bottom: 2px;
-}
-.section-text a:hover {
-  background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 3px;
-}
-.section-text a:active {
-  background-color: #222428;
+  h2 {
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 26px;
+    font-weight: unset;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    width: 125px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: unset;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 3px;
+    }
+    &:active {
+      background-color: #222428;
+    }
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -38,27 +38,29 @@
     padding: 0 80px;
   }
 }
+
 @media screen and (max-width: 1365px) {
   .section-text h2 {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .section-text {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .section-text {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
+
 @media screen and (max-width: 479px), screen and (max-height: 480px) {
   .section-text {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
-/*# sourceMappingURL=section-text.css.map */

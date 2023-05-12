@@ -1,26 +1,29 @@
+$page-color: #1a1b1e;
+$page-green-color: #133c2a;
+
 .gamepass-wrapper {
-  background-color: #1a1b1e;
+  background-color: $page-color;
   position: relative;
   z-index: 0;
-}
-.gamepass-wrapper::before {
-  content: "";
-  background: linear-gradient(-180deg, #133c2a 0, #1a1b1e 100%);
-  height: 456px;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.gamepass-wrapper__img {
-  display: flex;
-  justify-content: center;
-}
-.gamepass-wrapper__img svg {
-  height: 27px;
-  width: 157px;
-  fill: white;
-  background-color: transparent;
-  margin: 40px 0 41px 0;
+  &::before {
+    content: "";
+    background: linear-gradient(-180deg, $page-green-color 0, $page-color 100%);
+    height: 456px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    svg {
+      height: 27px;
+      width: 157px;
+      fill: white;
+      background-color: transparent;
+      margin: 40px 0 41px 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1919px) {
@@ -28,6 +31,7 @@
     margin-bottom: 33px;
   }
 }
+
 @media screen and (max-width: 1365px) {
   .gamepass-wrapper::before {
     height: 357px;
@@ -37,23 +41,24 @@
     margin-bottom: 24px;
   }
 }
+
 @media screen and (max-height: 480px) {
   .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
+
 @media screen and (max-width: 567px) and (max-height: 480px) {
   .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
+
 @media screen and (max-width: 479px) {
   .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
-
-/*# sourceMappingURL=gamepass.css.map */
