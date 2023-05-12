@@ -1,4 +1,4 @@
-.card_text {
+.section-text {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -6,21 +6,21 @@
   padding: 0 48px;
 }
 
-.h2 {
+.section-text h2 {
   font-family: Bahnschrift;
   color: white;
   font-size: 26px;
   font-weight: unset;
 }
 
-.mostra_tutto {
+.section-text a {
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: transparent;
   width: 125px;
-  height: 25px;
+  height: 24px;
   font-size: 16px;
   font-weight: unset;
   text-decoration: none;
@@ -28,26 +28,43 @@
   padding-bottom: 2px;
 }
 
-.mostra_tutto:hover {
+.section-text a:hover {
   background-color: rgba(255, 255, 255, 0.35);
   border-radius: 3px;
 }
 
-.mostra_tutto:active {
+.section-text a:active {
   background-color: #222428;
 }
 
-@media screen and (max-width: 1365px) {
-  .h2 {
-    font-size: 20px;
+@media screen and (min-width: 1920px) {
+  .section-text {
+    padding: 0 80px;
   }
-  .card_text {
-    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1365px) {
+  .section-text h2 {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .card_text {
+  .section-text {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 479px), screen and (max-height: 480px) {
+  .section-text {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

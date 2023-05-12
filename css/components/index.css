@@ -1,12 +1,18 @@
 @import url(./sections/nav.css);
-@import url(./sections/mainWrapper.css);
-@import url(./shared/firstItem.css);
-@import url(./shared/cloud_cards.css);
-@import url(./shared/card_text.css);
+@import url(./sections/primary-sections-wrapper.css);
+@import url(./sections/base-section.css);
+@import url(./sections/cloud-section.css);
 @import url(./sections/gamepass.css);
-@import url(./shared/addedRecently.css);
-@import url(./shared/genre.css);
-@import url(./shared/allGames.css);
+@import url(./sections/added-recently-section.css);
+@import url(./sections/sna-section.css);
+@import url(./sections/genre-section.css);
+@import url(./sections/all-games-section.css);
 @import url(./sections/footer.css);
-@import url(./shared/sna_cards.css);
 
+@import url(./shared/card-game--lg.css);
+@import url(./shared/section-text.css);
+@import url(./shared/card-game.css);
+@import url(./shared/svg-container.css);
+@import url(./shared/card-game--sm.css);
+@import url(./shared/card-genre.css);
+@import url(./shared/card-game-xs.css);

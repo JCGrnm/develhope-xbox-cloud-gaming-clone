@@ -1,9 +1,9 @@
-.main__wrapper {
+.primary-sections-wrapper {
   position: relative;
   background-color: #1a1b1e;
 }
 
-.main__wrapper::before {
+.primary-sections-wrapper::before {
   content: "";
   background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e 100%),
     url(../../../assets/images/Card\ Grandi/nfs.jpg);
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 1919px) {
-  .main__wrapper::before {
+  .primary-sections-wrapper::before {
     background-image: linear-gradient(
         -180deg,
         #1b1d1e8c 0,
@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 1365px) {
-  .main__wrapper::before {
+  .primary-sections-wrapper::before {
     min-height: 450px;
     background-image: linear-gradient(
         -180deg,
@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .main__wrapper::before {
+  .primary-sections-wrapper::before {
     min-height: 450px;
     background-image: linear-gradient(
         -180deg,
@@ -51,9 +51,10 @@
 }
 
 @media screen and (max-width: 479px) {
-  .main__wrapper::before {
-    height: calc(72.5vw + 152px);
+  .primary-sections-wrapper::before {
+    min-height: initial;
     max-height: 678px;
+    height: calc(72.5vw + 152px);
     background-image: linear-gradient(-180deg, #1b1d1e8c 0, #1a1b1e 100%),
       url(../../../assets/images/Card\ Grandi/nfs.jpg);
   }

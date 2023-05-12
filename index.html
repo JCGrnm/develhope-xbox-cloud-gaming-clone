@@ -11,8 +11,8 @@
 
   <body>
     <nav>
-      <div id="nav_wrapper">
-        <div id="nav_left">
+      <div class="navbar">
+        <div class="navbar__left">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,21 +44,19 @@
             </svg>
           </a>
         </div>
-        <div id="nav_right">
-          <!-- ACCEDI BUTTON //////////////////-->
-          <div class="accedi_container">
+        <div class="navbar__right">
+          <div class="navbar__login-link">
             <a
-              class="UpsellButton-module__button___PyzNp CallToActionButton-module__callToActionButton___LbTTX Button-module__basicBorderRadius___TaX9J Button-module__defaultBase___c7wIT Button-module__buttonBase___olICK Button-module__callToAction___mSaZg Button-module__textNoUnderline___kHdUB Button-module__typeBrand___MMuct Button-module__sizeMedium___T+8s+ Button-module__overlayModeSolid___v6EcO"
+              class="UpsellButton-module__button___PyzNp CallToActionButton-module__callToActionButton___LbTTX Button-module__basicBorderRadius___TaX9J Button-module__defaultBase-item___c7wIT Button-module__buttonBase-item___olICK Button-module__callToAction___mSaZg Button-module__textNoUnderline___kHdUB Button-module__typeBrand___MMuct Button-module__sizeMedium___T+8s+ Button-module__overlayModeSolid___v6EcO"
               href="https://login.live.com/oauth20_authorize.srf?client_id=1f907974-e22b-4810-a9de-d9647380c97e&scope=xboxlive.signin+openid+profile+offline_access&redirect_uri=https%3A%2F%2Fwww.xbox.com%2Fauth%2Fmsa%3Faction%3DloggedIn%26locale_hint%3Dit-IT&response_type=code&state=eyJpZCI6IjYzZDBiNDE4LWEyNGUtNGQyOC05ZGE1LTQ4MjgzYTE1MmE2MiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D|https%253A%252F%252Fwww.xbox.com%252Fit-IT%252Fplay&response_mode=fragment&nonce=c7798d02-7401-46c2-a160-107650413b84&prompt=login&code_challenge=cfZ0BTYqM8X_IuVBI8PQ3FKHLju8k2Lw95eB_qgd428&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=2.32.2&uaid=dea0baf6510f42fba5b91c00f777ac3a&msproxy=1&issuer=mso&tenant=consumers&ui_locales=it-IT&client_info=1&epct=PAQABAAEAAAD--DLA3VO7QrddgJg7Wevrp-f6AhAvEJpnc2MdYbuDIQpQfB5OBLnYhT5KUdT60GF7IhWIQr2lucUEme6SafN1VPkot7lgLTFOUgFRRSD8IA72feOr1Lum5aHbw4Jxfa-tfb-mxDVXnKC34VPIAYZrGk6Eiz5qVumaFc138jm_CyJuZRnNnlhxXgG48X0ttldaS1BmVS--AN4pR8xv5T2Q4gV4tpvV1ySiw55O91e7ryAA&jshs=0#"
             >
               Accedi</a
             >
           </div>
-          <!-- ACCEDI BUTTON /////////////////////-->
           <form>
             <label for="search">
-              <div id="search_bar_focus">
-                <div id="search_bar_container">
+              <div class="navbar__searchbar">
+                <div class="navbar__searchbar-inner">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -94,7 +92,7 @@
                 </div>
               </div>
             </label>
-            <button class="search_button">
+            <button class="navbar__search-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 2048 2048"
@@ -109,7 +107,7 @@
               </svg>
             </button>
           </form>
-          <button class="account_button">
+          <button class="navbar__user-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 2048 2048"
@@ -126,16 +124,16 @@
         </div>
       </div>
     </nav>
-    <div class="main__wrapper">
-      <div class="firstItem">
-        <div class="firstItem__content">
-          <div class="firstItem__content__card">
+    <div class="primary-sections-wrapper">
+      <div class="base-section">
+        <div class="base-section__content">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/nfs.jpg"
                 alt="Need for speed heat"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -150,10 +148,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>Need for Speed Heat</h2>
+                <p>Need for Speed Heat</p>
                 <p>Datti da fare di giorno e rischia tutto di notte</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -168,13 +166,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/coffeetalk.jpg"
                 alt="Coffe Talk Episodio 2"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -189,10 +187,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>Coffee Talk - Episodio 2</h2>
+                <p>Coffee Talk - Episodio 2</p>
                 <p>Hibiscus & Butterfly</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -207,13 +205,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/valheim.png"
                 alt="Valheim"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -228,10 +226,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>Valheim</h2>
+                <p>Valheim</p>
                 <p>Mettiti alla prova di fronte a Odino</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -246,13 +244,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/7daystodie.jpg"
                 alt="7 Days to die"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -267,10 +265,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>7 Days to Die</h2>
+                <p>7 Days to Die</p>
                 <p>Sopravvivi in ciò che resta dopo la caduta della civiltà</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -285,13 +283,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/halo.jpg"
                 alt="Halo infinite"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -306,10 +304,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>Halo infinite</h2>
+                <p>Halo infinite</p>
                 <p>Il ritorno di Master Chief</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -324,13 +322,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/asduskfalls.jpg"
                 alt="As dusk falls"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -345,10 +343,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>As Dusk Falls</h2>
+                <p>As Dusk Falls</p>
                 <p>Ogni famiglia ha dei segreti. Ogni segreto ha un prezzo</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -363,13 +361,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/dragonage.jpg"
                 alt="Dragon age 2"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -384,10 +382,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>Dragon Age 2</h2>
+                <p>Dragon Age 2</p>
                 <p>Diventa il campione di Kirkwall</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -402,13 +400,13 @@
               </div>
             </a>
           </div>
-          <div class="firstItem__content__card">
+          <div class="card-game--lg">
             <a href="#">
               <img
                 src="./assets/images/Card Grandi/ark.jpg"
                 alt="Ark ultimate survivor edition"
               />
-              <div class="firstItem__content__card__text">
+              <div class="card-game--lg__text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="374 410 1300 1242"
@@ -423,10 +421,10 @@
                     d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"
                   ></path>
                 </svg>
-                <h2>ARK: Ultimate Survivor Edition</h2>
+                <p>ARK: Ultimate Survivor Edition</p>
                 <p>La più grande avventura con dinosauri di tutti i tempi</p>
               </div>
-              <div class="firstItem__content__card__svg">
+              <div class="card-game--lg__controller-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -443,13 +441,13 @@
           </div>
         </div>
       </div>
-      <div id="cloud_wrapper">
-        <div class="card_text">
-          <h2 class="h2">Più diffusi sul cloud</h2>
-          <a href="#" class="mostra_tutto">Mostra tutto</a>
+      <div class="cloud-section">
+        <div class="section-text">
+          <h2>Più diffusi sul cloud</h2>
+          <a href="#">Mostra tutto</a>
         </div>
-        <div class="cloud_cards_container">
-          <div class="cloud_cards">
+        <div class="cloud-section__content">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -458,6 +456,7 @@
                     ./assets/images/piu%20diffusi%20sul%20cloud/480px/fortnite.jpg
                   "
                 />
+
                 <source
                   media="(max-width:1023px)"
                   srcset="
@@ -481,8 +480,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     style="display: none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +498,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -513,12 +512,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Fortnite</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -551,8 +550,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -568,7 +567,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -582,12 +581,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Atomic Heart</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -620,8 +619,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -637,7 +636,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -651,12 +650,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Battlefield™ 2042 Xbox Series X|S</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -689,8 +688,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -706,7 +705,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -720,12 +719,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Farming Simulator 22</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -758,8 +757,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -775,7 +774,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -789,12 +788,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Forza Horizon 5 Edizione standard</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -827,8 +826,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -844,7 +843,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -858,14 +857,14 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span
                   >Tom Clancy's Ghost Recon® Wildlands - Standard Edition</span
                 >
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -898,8 +897,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -915,7 +914,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -929,12 +928,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Halo Infinite (Campagna)</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -967,8 +966,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -984,7 +983,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -998,12 +997,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>HITMAN World of Assassination</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -1036,8 +1035,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1053,7 +1052,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1067,12 +1066,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Mortal Kombat 11</span>
               </div>
             </a>
           </div>
-          <div class="cloud_cards">
+          <div class="card-game">
             <a href="#">
               <picture>
                 <source
@@ -1105,8 +1104,8 @@
                   alt=""
                 />
               </picture>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1122,7 +1121,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1136,7 +1135,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="cloud_cards_txt">
+              <div class="card-game__text">
                 <span>Wo Long: Fallen Dynasty</span>
               </div>
             </a>
@@ -1144,8 +1143,8 @@
         </div>
       </div>
     </div>
-    <div class="gamepass__wrapper">
-      <span class="gamepass__img"
+    <div class="gamepass-wrapper">
+      <span class="gamepass-wrapper__img"
         ><svg
           class="XboxGamePassLogo-module__svg___JzAU- GamePassPromoSection-module__gamepassLogo___RL7ch"
           width="1em"
@@ -1162,20 +1161,20 @@
           </g>
         </svg>
       </span>
-      <div class="addedRecently">
-        <div class="addedRecently__text">
-          <h2 class="h2">Aggiunto di recente</h2>
-          <a href="#" class="mostra_tutto">Mostra tutto</a>
+      <div class="added-recently-section">
+        <div class="section-text">
+          <h2>Aggiunto di recente</h2>
+          <a href="#">Mostra tutto</a>
         </div>
-        <div class="addedRecently__content">
-          <div class="addedRecently__content__card">
+        <div class="added-recently-section__content">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/ravenlock-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1191,7 +1190,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1205,19 +1204,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Ravenlock</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/redfall-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1233,7 +1232,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1247,19 +1246,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Redfall</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/besiege-console-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1275,7 +1274,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1289,19 +1288,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Besiege Console</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/benedict-fox-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1317,7 +1316,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1331,19 +1330,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>The Last Case of Benedict Fox</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/blazblue-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1359,7 +1358,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1373,19 +1372,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>BlazBlue: Cross Tag Battle Special Edition</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/medieval-dynasty-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1401,7 +1400,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1415,19 +1414,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Medieval Dynasty (Xbox One)</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/homestead-arcana-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1443,7 +1442,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1457,19 +1456,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Homestead Arcana</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/coffee-talk-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1485,7 +1484,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1499,19 +1498,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Coffee Talk Episode 2: Hibiscus and Butterfly</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/minecraft-legends-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1527,7 +1526,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1541,19 +1540,19 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Minecraft Legends</span>
               </div>
             </a>
           </div>
-          <div class="addedRecently__content__card">
+          <div class="card-game">
             <a href="#">
               <img
                 src="./assets/images/Aggiunto di recente/ghostwire-412x618.jpg"
                 alt=""
               />
-              <div class="addedRecently__content__card__svg">
-                <div class="addedRecently__content__card__svg__gamepass">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1569,7 +1568,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="addedRecently__content__card__svg__joypad">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1583,7 +1582,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="addedRecently__content__card__txt">
+              <div class="card-game__text">
                 <span>Ghostwire: Tokyo</span>
               </div>
             </a>
@@ -1591,23 +1590,23 @@
         </div>
       </div>
       <!-- SNA SECTION -->
-      <div class="sna">
-        <div class="sna__text">
-          <h2 class="h2">Presto non disponibile</h2>
+      <div class="sna-section">
+        <div class="section-text">
+          <h2>Presto non disponibile</h2>
         </div>
-        <div class="sna__content">
-          <div class="sna__content__card">
+        <div class="sna-section__content">
+          <div class="card-game--sm">
             <a href="#">
               <img
                 src="./assets/images/sna/myFriendPedro.jpg
                   "
                 alt=""
               />
-              <div class="sna__content__card__text">
+              <div class="card-game--sm__text">
                 <span>My Friend Pedro</span>
               </div>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1623,7 +1622,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1640,18 +1639,18 @@
             </a>
           </div>
           <!-- CLOSING TAG SNA CARD-->
-          <div class="sna__content__card">
+          <div class="card-game--sm">
             <a href="#">
               <img
                 src="./assets/images/sna/beforeWeLeave.jpg
                   "
                 alt=""
               />
-              <div class="sna__content__card__text">
+              <div class="card-game--sm__text">
                 <span>Before We Leave</span>
               </div>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1667,7 +1666,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1684,18 +1683,18 @@
             </a>
           </div>
           <!-- CLOSING TAG SNA CARD-->
-          <div class="sna__content__card">
+          <div class="card-game--sm">
             <a href="#">
               <img
                 src="./assets/images/sna/umurangi.jpg
                   "
                 alt=""
               />
-              <div class="sna__content__card__text">
+              <div class="card-game--sm__text">
                 <span>Umurangi Generation - Edizione Speciale</span>
               </div>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1711,7 +1710,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1728,18 +1727,18 @@
             </a>
           </div>
           <!-- CLOSING TAG SNA CARD-->
-          <div class="sna__content__card">
+          <div class="card-game--sm">
             <a href="#">
               <img
                 src="./assets/images/sna/danganronpa2.jpg
                   "
                 alt=""
               />
-              <div class="sna__content__card__text">
+              <div class="card-game--sm__text">
                 <span>Danganronpa 2: Goodbye Despair Anniversary Edition</span>
               </div>
-              <div class="svg_container">
-                <div class="gamepass_img_container">
+              <div class="svg-container">
+                <div class="svg-container__gamepass">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="374 410 1300 1242"
@@ -1755,7 +1754,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="joypad_img_container">
+                <div class="svg-container__controller">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2048 2048"
@@ -1777,14 +1776,14 @@
       </div>
       <!--CLOSING TAG DIV SNA WRAPPER-->
       <!--END SOON NOT AVAILABLE CARDS-->
-      <div class="genre">
-        <div class="genre__text">
-          <h2 class="h2">Generi</h2>
+      <div class="genre-section">
+        <div class="section-text">
+          <h2>Generi</h2>
         </div>
-        <div class="genre__content">
-          <div class="genre__content__card">
+        <div class="genre-section__content">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1798,14 +1797,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>INDIE</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1819,14 +1818,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>INTUITIVO PER LA FAMIGLIA</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1840,14 +1839,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>SPARATUTTO</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1861,14 +1860,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>AZIONE E AVVENTURA</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1882,14 +1881,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>PICCHIADURO E BRAWLER</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1903,14 +1902,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>STRATEGIA</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1924,14 +1923,14 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>SIMULATORI</span>
               </div>
             </a>
           </div>
-          <div class="genre__content__card">
+          <div class="card-genre">
             <a href="#">
-              <div class="genre__content__card__svg">
+              <div class="card-genre__svg">
                 <svg
                   width="1em"
                   height="1em"
@@ -1945,23 +1944,23 @@
                   ></path>
                 </svg>
               </div>
-              <div class="genre__content__card__txt">
+              <div class="card-genre__txt">
                 <span>GIOCO DI RUOLO (RPG)</span>
               </div>
             </a>
           </div>
         </div>
       </div>
-      <div class="allGames">
-        <div class="allGames__text">
-          <h2 class="h2">Tutti i giochi</h2>
-          <a href="#" class="mostra_tutto">Mostra tutto</a>
+      <div class="all-games-section">
+        <div class="section-text">
+          <h2>Tutti i giochi</h2>
+          <a href="#">Mostra tutto</a>
         </div>
-        <div class="allGames__content">
-          <div class="allGames__content__card">
+        <div class="all-games-section__content">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/7 days to die.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -1974,17 +1973,17 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>7 Days to Die</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img
                 src="./assets/images/tutti i giochi/a plague tale requiem.jpg"
               />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -1997,15 +1996,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>A Plague Tale: Requiem</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/age of empires.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2018,15 +2017,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Age of Empires II: Definitive Edition</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/amnesia.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2039,15 +2038,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Amnesia: collection</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/amnesia rebirth.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2060,15 +2059,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Amnesia: Rebirth</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/among us.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2081,15 +2080,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Among Us</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/anvil.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2102,15 +2101,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>ANVIL : Vault Breaker (Game Preview)</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/aragami2.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2123,15 +2122,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Aragami 2</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/ark.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2144,15 +2143,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>ARK: Ultimate Survivor Edition</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/as dusk falls.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2165,17 +2164,17 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>As Dusk Falls</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img
                 src="./assets/images/tutti i giochi/assassins creed odyssey.jpg"
               />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2188,17 +2187,17 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Assassin's Creed® Odyssey</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img
                 src="./assets/images/tutti i giochi/assassins creed origins.jpg"
               />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2211,15 +2210,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Assassin's Creed® Origins</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/astroneer.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2232,15 +2231,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>ASTRONEER</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/atomic heart.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2253,15 +2252,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Atomic Heart</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/back4blood.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2274,15 +2273,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Back 4 Blood</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/banjo.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2295,15 +2294,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Banjo Kazooie: N n B</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/banjokazooie.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2316,15 +2315,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Banjo-Kazooie</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/banjoTooie.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2337,15 +2336,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Banjo-Tooie</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/batman.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2358,15 +2357,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Batman™: Arkham Knight</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/battlefield4.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2379,17 +2378,17 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Battlefield 4</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img
                 src="./assets/images/tutti i giochi/battlefieldrevolution.jpg"
               />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2402,17 +2401,17 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Battlefield™ 1 Revolution</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img
                 src="./assets/images/tutti i giochi/battlefieldEleventhhour.jpg"
               />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2425,15 +2424,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Battlefield™ 2042 Xbox Series X|S</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/battlefieldV.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2446,15 +2445,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Battlefield™ V</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/battletoads.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2467,15 +2466,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Battletoads</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/beaconPines.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2488,15 +2487,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Beacon Pines</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/before we leave.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2509,15 +2508,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Before We Leave</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/ben10.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2530,15 +2529,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Ben 10: Power Trip</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/blackDesert.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2551,15 +2550,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Black Desert</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/bleedingEdge.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2572,15 +2571,15 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>Bleeding Edge</span>
               </div>
             </a>
           </div>
-          <div class="allGames__content__card">
+          <div class="card-game-xs">
             <a href="#">
               <img src="./assets/images/tutti i giochi/blinx.jpg" />
-              <div class="allGames__content__card__svg">
+              <div class="card-game-xs__svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 2048 2048"
@@ -2593,13 +2592,13 @@
                   ></path>
                 </svg>
               </div>
-              <div class="allGames__content__card__text">
+              <div class="card-game-xs__text">
                 <span>BLINX: The Time sweeper</span>
               </div>
             </a>
           </div>
         </div>
-        <div class="allGames__showAll">
+        <div class="all-games-section__showAll">
           <a href="#">VISUALIZZA TUTTI I GIOCHI</a>
         </div>
       </div>
