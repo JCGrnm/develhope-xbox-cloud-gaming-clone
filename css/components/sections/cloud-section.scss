@@ -1,14 +1,14 @@
 .primary-sections-wrapper .cloud-section {
   position: relative;
   padding-bottom: 11.5px;
-}
-.primary-sections-wrapper .cloud-section__content {
-  display: flex;
-  overflow-x: scroll;
-  padding-bottom: 11.5px;
-  gap: 1rem;
-  padding-right: 48px;
-  padding-left: 48px;
+  &__content {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 11.5px;
+    gap: 1rem;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -18,35 +18,46 @@
   }
 }
 @media screen and (max-width: 1365px) {
-  .primary-sections-wrapper .cloud-section, .primary-sections-wrapper .cloud-section__content {
-    padding-bottom: 7px;
+  .primary-sections-wrapper .cloud-section {
+    &,
+    &__content {
+      padding-bottom: 7px;
+    }
   }
 }
 @media screen and (max-width: 1023px) {
-  .primary-sections-wrapper .cloud-section, .primary-sections-wrapper .cloud-section__content {
-    padding-bottom: 7.5px;
+  .primary-sections-wrapper .cloud-section {
+    &,
+    &__content {
+      padding-bottom: 7.5px;
+    }
   }
 }
+
 @media screen and (max-width: 767px) {
   .primary-sections-wrapper .cloud-section .cloud-section__content {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
+
 @media screen and (max-height: 480px) {
-  .primary-sections-wrapper .cloud-section, .primary-sections-wrapper .cloud-section__content {
-    padding-bottom: 11.5px;
-  }
-  .primary-sections-wrapper .cloud-section .cloud-section__content {
-    padding-left: 16px;
-    padding-right: 16px;
+  .primary-sections-wrapper .cloud-section {
+    &,
+    &__content {
+      padding-bottom: 11.5px;
+    }
+
+    .cloud-section__content {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 }
+
 @media screen and (max-width: 479px) {
   .primary-sections-wrapper .cloud-section .cloud-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
-
-/*# sourceMappingURL=cloud-section.css.map */

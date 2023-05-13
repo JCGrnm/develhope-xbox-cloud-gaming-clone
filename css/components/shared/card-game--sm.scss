@@ -1,0 +1,83 @@
+$card-text-color: rgba(0, 0, 0, 0.653);
+$shadow-color: rgba(0, 0, 0, 0.5);
+$active-card-color: #0000001a;
+
+.card-game--sm a {
+  display: flex;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 1.8px 6px 0 $shadow-color;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  &:active::after {
+    background-color: $active-card-color;
+  }
+  img {
+    max-width: 306px;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-game--sm__text {
+    width: 100%;
+    padding: 4px 8px;
+    line-height: 1.5;
+    position: absolute;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.653);
+    transform: translateY(100%);
+    transition: 0.1s;
+    color: white;
+  }
+  &:hover .card-game--sm__text {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .card-game--sm a img {
+    max-width: 297px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card-game--sm a img {
+    max-width: 258px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-game--sm a img {
+    max-width: 244px;
+  }
+}
+@media screen and (max-height: 480px) {
+  .card-game--sm a img {
+    max-width: 239px;
+  }
+}
+
+@media screen and (max-width: 567px) and (max-height: 480px) {
+  .card-game--sm a img {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-game--sm a img {
+    max-width: 280px;
+  }
+}

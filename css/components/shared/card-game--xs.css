@@ -1,0 +1,117 @@
+.card-game--xs {
+  max-width: calc(10% - 14.4px);
+}
+.card-game--xs a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.card-game--xs a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.card-game--xs a:active::after {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}
+.card-game--xs a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-game--xs a .card-game--xs__svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  border-top-left-radius: 4px;
+}
+.card-game--xs a .card-game--xs__svg svg {
+  fill: white;
+}
+.card-game--xs a .card-game--xs__text {
+  position: absolute;
+  bottom: 0;
+  padding: 4px 8px;
+  width: 100%;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background-color: rgba(0, 0, 0, 0.653);
+  color: white;
+  transform: translateY(100%);
+  transition: 0.1s ease-in;
+}
+.card-game--xs a:hover .card-game--xs__text {
+  transform: translateY(0);
+}
+.card-game--xs a:hover .card-game--xs__svg {
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: 1919px) {
+  .card-game--xs {
+    max-width: calc(12.5% - 14px);
+  }
+  .card-game--xs:nth-child(25), .card-game--xs:nth-child(26), .card-game--xs:nth-child(27), .card-game--xs:nth-child(28), .card-game--xs:nth-child(29), .card-game--xs:nth-child(30) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .card-game--xs {
+    max-width: calc(16.66667% - 13.33333px);
+  }
+  .card-game--xs:nth-child(19), .card-game--xs:nth-child(20), .card-game--xs:nth-child(21), .card-game--xs:nth-child(22), .card-game--xs:nth-child(23), .card-game--xs:nth-child(24) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .card-game--xs {
+    max-width: calc(20% - 12.8px);
+  }
+  .card-game--xs:nth-child(16), .card-game--xs:nth-child(17), .card-game--xs:nth-child(18) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-game--xs {
+    max-width: calc(25% - 12px);
+  }
+  .card-game--xs:nth-child(13), .card-game--xs:nth-child(14), .card-game--xs:nth-child(15) {
+    display: none;
+  }
+}
+@media screen and (max-height: 480px) {
+  .card-game--xs {
+    max-width: calc(25% - 12px);
+    width: 100%;
+    flex-grow: 1;
+  }
+  .card-game--xs:nth-child(13), .card-game--xs:nth-child(14), .card-game--xs:nth-child(15), .card-game--xs:nth-child(16), .card-game--xs:nth-child(17), .card-game--xs:nth-child(18), .card-game--xs:nth-child(19), .card-game--xs:nth-child(20), .card-game--xs:nth-child(21), .card-game--xs:nth-child(22), .card-game--xs:nth-child(23), .card-game--xs:nth-child(24), .card-game--xs:nth-child(25), .card-game--xs:nth-child(26), .card-game--xs:nth-child(27), .card-game--xs:nth-child(28), .card-game--xs:nth-child(29), .card-game--xs:nth-child(30) {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .card-game--xs {
+    max-width: calc(33.33333% - 10.66667px);
+  }
+  .card-game--xs:nth-child(10), .card-game--xs:nth-child(11), .card-game--xs:nth-child(12) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=card-game--xs.css.map */
