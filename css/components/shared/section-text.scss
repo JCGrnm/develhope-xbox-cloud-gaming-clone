@@ -9,6 +9,7 @@
     color: white;
     font-size: 26px;
     font-weight: unset;
+    line-height: 32px;
   }
   a {
     display: flex;
@@ -42,6 +43,7 @@
 @media screen and (max-width: 1365px) {
   .section-text h2 {
     font-size: 20px;
+    line-height: 24px;
   }
 }
 

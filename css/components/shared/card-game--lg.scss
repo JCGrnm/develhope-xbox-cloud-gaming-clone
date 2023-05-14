@@ -6,11 +6,12 @@
     display: block;
     text-decoration: none;
     position: relative;
+    height: 100%;
     img {
       max-width: 872px;
       display: block;
       border-radius: 5.6px;
-      height: 100%;
+      object-fit: cover;
     }
     &::after {
       content: "";
@@ -33,54 +34,58 @@
     &:active::after {
       background-color: #0000001a;
     }
-  }
-  &__text {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 16px 16px;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    line-height: 20px;
-    svg {
-      height: 16px;
-      width: 26px;
-      fill: white;
-      background-color: #000000b3;
-    }
-    p {
-      color: white;
-      font-size: 14px;
-      margin-right: 56px;
-      &:nth-child(2) {
+
+    .card-game--lg__text {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 16px 16px;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      svg {
+        height: 16px;
+        width: 26px;
+        fill: white;
+        background-color: #000000b3;
+      }
+      p {
         color: white;
-        font-size: 32px;
-        font-family: Bahnschrift;
-        font-weight: 400;
-        margin-top: 18px;
-        margin-bottom: 16px;
+        &:nth-child(2) {
+          color: white;
+          font-size: 32px;
+          font-family: Bahnschrift;
+          font-weight: 400;
+          line-height: 40px;
+          margin-bottom: 6px;
+          margin-top: 8px;
+        }
+        &:nth-child(3) {
+          font-size: 14px;
+          margin-right: 56px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .card-game--lg__controller-svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      width: 32px;
+      background-color: #000000b3;
+      border-top-left-radius: 4px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      border-bottom-right-radius: 4px;
+      svg {
+        fill: white;
       }
     }
   }
-  &__controller-svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32px;
-    width: 32px;
-    background-color: #000000b3;
-    border-top-left-radius: 4px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    border-bottom-right-radius: 4px;
-    svg {
-      fill: white;
-    }
-  }
 }
-
 @media screen and (max-width: 1919px) {
   .card-game--lg a img {
     max-width: 626px;
@@ -88,14 +93,13 @@
 }
 
 @media screen and (max-width: 1365px) {
-  .card-game--lg a img {
-    max-width: 551px;
-  }
-
-  .card-game--lg a .card-game--lg__text h2 {
-    font-size: 26px;
-    margin-top: 14px;
-    margin-bottom: 12px;
+  .card-game--lg a {
+    img {
+      max-width: 551px;
+    }
+    .card-game--lg__text p:nth-child(2) {
+      font-size: 26px;
+    }
   }
 }
 
@@ -114,7 +118,6 @@
     max-width: 272px;
     min-height: 272px;
     width: auto;
-    object-fit: cover;
     object-position: top;
   }
 }
@@ -124,7 +127,6 @@
     max-width: 272px;
     min-height: 272px;
     width: auto;
-    object-fit: cover;
     object-position: top;
   }
 }
