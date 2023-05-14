@@ -1,0 +1,20 @@
+main {
+  position: relative;
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: -88px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1b1e;
+}
+
+@media screen and (max-width: 479px), screen and (max-height: 480px) {
+  main::before {
+    top: -72px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

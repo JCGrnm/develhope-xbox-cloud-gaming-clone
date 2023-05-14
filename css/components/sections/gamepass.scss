@@ -1,9 +1,11 @@
 $page-color: #1a1b1e;
 $page-green-color: #133c2a;
 
-.gamepass-wrapper {
+main .gamepass-wrapper {
   background-color: $page-color;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   z-index: 0;
   &::before {
     content: "";
@@ -21,43 +23,43 @@ $page-green-color: #133c2a;
       width: 157px;
       fill: white;
       background-color: transparent;
-      margin: 40px 0 41px 0;
+      margin: 40px 0 40px 0;
     }
   }
 }
 
 @media screen and (max-width: 1919px) {
-  .gamepass-wrapper .gamepass-wrapper__img svg {
-    margin-bottom: 33px;
+  main .gamepass-wrapper .gamepass-wrapper__img svg {
+    margin-bottom: 32px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  .gamepass-wrapper::before {
+  main .gamepass-wrapper::before {
     height: 357px;
   }
-  .gamepass-wrapper .gamepass-wrapper__img svg {
+  main .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-height: 480px) {
-  .gamepass-wrapper .gamepass-wrapper__img svg {
+  main .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 567px) and (max-height: 480px) {
-  .gamepass-wrapper .gamepass-wrapper__img svg {
+  main .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .gamepass-wrapper .gamepass-wrapper__img svg {
+  main .gamepass-wrapper .gamepass-wrapper__img svg {
     margin-top: 32px;
     margin-bottom: 24px;
   }
