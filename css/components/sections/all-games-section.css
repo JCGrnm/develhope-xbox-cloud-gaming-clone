@@ -1,18 +1,18 @@
-.gamepass-wrapper .all-games-section__content {
+main .gamepass-wrapper .all-games-section__content {
   padding: 0 80px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
-.gamepass-wrapper .all-games-section__showAll {
+main .gamepass-wrapper .all-games-section__showAll {
   display: flex;
   justify-content: center;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 24px;
 }
-.gamepass-wrapper .all-games-section__showAll a {
+main .gamepass-wrapper .all-games-section__showAll a {
   font-family: Bahnschrift;
   font-weight: 600;
   text-decoration: none;
@@ -27,50 +27,50 @@
   justify-content: center;
   flex-shrink: 0;
 }
-.gamepass-wrapper .all-games-section__showAll a:hover {
+main .gamepass-wrapper .all-games-section__showAll a:hover {
   background-color: #515863;
 }
-.gamepass-wrapper .all-games-section__showAll a:active {
+main .gamepass-wrapper .all-games-section__showAll a:active {
   background-color: #222428;
 }
 
 @media screen and (max-width: 1919px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 48px;
     padding-right: 48px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 72px;
   }
 }
 @media screen and (max-width: 767px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (max-height: 480px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 567px) and (max-height: 480px) {
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 32px;
   }
 }
 @media screen and (max-width: 479px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 32px;
   }
 }

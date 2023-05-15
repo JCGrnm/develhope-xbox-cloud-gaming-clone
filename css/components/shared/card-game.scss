@@ -15,6 +15,7 @@ $active-card-color: #0000001a;
   img {
     max-width: 206px;
     display: block;
+    object-fit: cover;
   }
   &::after {
     content: "";

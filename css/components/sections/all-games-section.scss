@@ -2,7 +2,7 @@ $button-color: #2d3036;
 $button-hover: #515863;
 $button-active: #222428;
 
-.gamepass-wrapper .all-games-section {
+main .gamepass-wrapper .all-games-section {
   &__content {
     padding: 0 80px;
     display: flex;
@@ -12,7 +12,7 @@ $button-active: #222428;
   &__showAll {
     display: flex;
     justify-content: center;
-    padding-bottom: 72px;
+    padding-bottom: 70px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 24px;
@@ -41,47 +41,47 @@ $button-active: #222428;
 }
 
 @media screen and (max-width: 1919px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 48px;
     padding-right: 48px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 72px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
 @media screen and (max-height: 480px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 567px) and (max-height: 480px) {
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 32px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .gamepass-wrapper .all-games-section .all-games-section__content {
+  main .gamepass-wrapper .all-games-section .all-games-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .all-games-section .all-games-section__showAll {
+  main .gamepass-wrapper .all-games-section .all-games-section__showAll {
     padding-bottom: 32px;
   }
 }

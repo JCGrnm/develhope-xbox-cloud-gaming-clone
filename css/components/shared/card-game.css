@@ -12,6 +12,7 @@
 .card-game a img {
   max-width: 206px;
   display: block;
+  object-fit: cover;
 }
 .card-game a::after {
   content: "";

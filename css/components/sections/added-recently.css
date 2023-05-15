@@ -1,7 +1,7 @@
-.gamepass-wrapper .added-recently-section {
-  padding-bottom: 12px;
+main .gamepass-wrapper .added-recently-section {
+  padding-bottom: 11.5px;
 }
-.gamepass-wrapper .added-recently-section__content {
+main .gamepass-wrapper .added-recently-section__content {
   display: flex;
   overflow-x: scroll;
   padding-bottom: 11.5px;
@@ -11,49 +11,46 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
-    padding-bottom: 12px;
-  }
-  .gamepass-wrapper .added-recently-section .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section .added-recently-section__content {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 @media screen and (max-width: 1365px) {
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
-    padding-bottom: 8px;
+  main .gamepass-wrapper .added-recently-section, main .gamepass-wrapper .added-recently-section__content {
+    padding-bottom: 7.5px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section, main .gamepass-wrapper .added-recently-section__content {
     padding-bottom: 7.5px;
   }
 }
 @media screen and (max-width: 767px) {
-  .gamepass-wrapper .added-recently-section .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section .added-recently-section__content {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (max-height: 480px) {
-  .gamepass-wrapper .added-recently-section .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section .added-recently-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section, main .gamepass-wrapper .added-recently-section__content {
     padding-bottom: 11.5px;
   }
 }
 @media screen and (max-width: 567px) and (max-height: 480px) {
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section, main .gamepass-wrapper .added-recently-section__content {
     padding-bottom: 7.5px;
   }
 }
 @media screen and (max-width: 479px) {
-  .gamepass-wrapper .added-recently-section, .gamepass-wrapper .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section, main .gamepass-wrapper .added-recently-section__content {
     padding-bottom: 7.5px;
   }
-  .gamepass-wrapper .added-recently-section .added-recently-section__content {
+  main .gamepass-wrapper .added-recently-section .added-recently-section__content {
     padding-left: 16px;
     padding-right: 16px;
   }
