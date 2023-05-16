@@ -3,6 +3,7 @@ main .sections-wrapper {
   background-color: #1a1b1e;
   max-width: 1920px;
   margin: 0 auto;
+  z-index: 0;
 }
 main .sections-wrapper::before {
   content: "";
@@ -14,6 +15,7 @@ main .sections-wrapper::before {
   height: 716px;
   position: absolute;
   top: -88px;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1365px) {
