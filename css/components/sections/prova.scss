@@ -1,0 +1,147 @@
+main .sections-wrapper .language-section .language-section__content {
+  width: 100%;
+  padding: 0 48px;
+
+  .language-button {
+    width: 100%;
+    position: relative;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    background-color: #2d3036;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .language-button__head {
+        padding-bottom: 8px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 100;
+
+        span {
+          flex-basis: 0;
+          text-align: center;
+          flex-grow: 1;
+
+          &:first-child {
+            flex-grow: 2;
+            flex-basis: 0;
+            text-align: left;
+          }
+        }
+      }
+
+      .language-button__body {
+        padding: 8px 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        align-items: center;
+
+        &:last-child {
+          position: relative;
+          border-bottom: none;
+
+          &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(
+              rgba(45, 48, 54, 0.4) 0%,
+              rgba(45, 48, 54, 1) 80%
+            );
+          }
+        }
+
+        span {
+          text-align: left;
+          flex-grow: 2;
+          flex-basis: 0;
+        }
+
+        &-svg--first {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          flex-basis: 0;
+
+          & svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+          }
+        }
+
+        &-svg--second {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          flex-basis: 0;
+
+          & svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+          }
+        }
+
+        &-svg--third {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          flex-basis: 0;
+
+          & svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+          }
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      padding-top: 16px;
+      font-size: 14px;
+
+      & svg {
+        height: 16px;
+        width: 16px;
+        margin-left: 5px;
+        fill: white;
+      }
+    }
+
+    &::after {
+      content: "";
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    &:hover::after {
+      background-color: #ffffff1a;
+    }
+
+    &:active::after {
+      background-color: #0000001a;
+    }
+  }
+}
