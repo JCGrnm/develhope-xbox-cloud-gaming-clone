@@ -12,7 +12,8 @@
 .card-game a img {
   max-width: 206px;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-game a::after {
   content: "";
@@ -72,6 +73,4 @@
   .card-game a img {
     max-width: 128px;
   }
-}
-
-/*# sourceMappingURL=card-game.css.map */
+}/*# sourceMappingURL=card-game.css.map */

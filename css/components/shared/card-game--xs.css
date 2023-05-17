@@ -23,7 +23,8 @@
 .card-game--xs a img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-game--xs a .card-game--xs__svg {
   position: absolute;
@@ -112,6 +113,4 @@
   .card-game--xs:nth-child(10), .card-game--xs:nth-child(11), .card-game--xs:nth-child(12) {
     display: none;
   }
-}
-
-/*# sourceMappingURL=card-game--xs.css.map */
+}/*# sourceMappingURL=card-game--xs.css.map */

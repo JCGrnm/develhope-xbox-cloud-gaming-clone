@@ -13,7 +13,8 @@
   max-width: 872px;
   display: block;
   border-radius: 5.6px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-game--lg a::after {
   content: "";
@@ -108,7 +109,8 @@
     max-width: 272px;
     min-height: 272px;
     width: auto;
-    object-position: top;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 @media screen and (max-width: 479px) {
@@ -116,8 +118,7 @@
     max-width: 272px;
     min-height: 272px;
     width: auto;
-    object-position: top;
+    -o-object-position: top;
+       object-position: top;
   }
-}
-
-/*# sourceMappingURL=card-game--lg.css.map */
+}/*# sourceMappingURL=card-game--lg.css.map */
