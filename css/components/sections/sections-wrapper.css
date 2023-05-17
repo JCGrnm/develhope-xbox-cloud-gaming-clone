@@ -3,10 +3,16 @@ main .sections-wrapper {
   background-color: #1a1b1e;
   max-width: 1920px;
   margin: 0 auto;
+  z-index: 0;
 }
 main .sections-wrapper::before {
   content: "";
-  background-image: linear-gradient(-180deg, rgba(27, 29, 30, 0.5490196078) 0, #1a1b1e 100%), url(../../../assets/images/Card\ Grandi/nfs.jpg);
+  background-image: linear-gradient(
+      -180deg,
+      rgba(27, 29, 30, 0.5490196078) 0,
+      #1a1b1e 100%
+    ),
+    url(../../../assets/images/Card\ Grandi/nfs.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -14,6 +20,7 @@ main .sections-wrapper::before {
   height: 716px;
   position: absolute;
   top: -88px;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1365px) {

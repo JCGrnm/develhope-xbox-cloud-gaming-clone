@@ -1,0 +1,174 @@
+main .sections-wrapper .hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  padding-top: 92px;
+}
+main .sections-wrapper .hero-section__left {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 67.68px;
+  width: fit-content;
+  flex-shrink: 0;
+}
+main .sections-wrapper .hero-section__left h1 {
+  font-size: 40px;
+  font-family: Bahnschrift;
+  font-weight: 400;
+  color: white;
+  min-width: fit-content;
+}
+main .sections-wrapper .hero-section__left p {
+  color: rgba(255, 255, 255, 0.6509803922);
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities--bottom {
+  margin-bottom: 66px;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities .hero-section__svg {
+  display: flex;
+  align-items: center;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities .hero-section__svg svg {
+  fill: white;
+  height: 21.333px;
+  width: 124px;
+  margin-right: 8px;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities .hero-section__svg--text {
+  display: flex;
+  align-items: center;
+  color: white;
+  line-height: 20px;
+}
+main .sections-wrapper .hero-section__left .hero-section__functionalities .hero-section__svg--text svg {
+  height: 20px;
+  width: 20px;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #008746;
+  z-index: 0;
+  min-width: 292px;
+  max-height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__login-link:hover {
+  fill: #fff;
+  background-color: #04b358;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__login-link:active {
+  fill: #fff;
+  background-color: #044e2a;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__login-link a {
+  font-family: Bahnschrift;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__btn {
+  border: none;
+  border-radius: 4px;
+  background-color: #484e58;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons .hero-section__btn svg {
+  fill: white;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 12px;
+}
+main .sections-wrapper .hero-section__right {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 1;
+  width: 50%;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi {
+  display: flex;
+  margin-right: 80px;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi img {
+  max-width: 48px;
+  max-height: 48px;
+  margin-top: 4px;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6509803922);
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a {
+  line-height: 36px;
+  color: #afa2e8;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: #2d3036;
+  font-size: 14px;
+  font-family: Bahnschrift;
+  font-weight: 600;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a svg {
+  width: 16px;
+  height: 16px;
+  fill: #afa2e8;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text p {
+  padding: 8px 0;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text p:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-warnings {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-warnings p {
+  color: rgba(255, 255, 255, 0.6509803922);
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1919px) {
+  main .sections-wrapper .hero-section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+/*# sourceMappingURL=hero-section.css.map */

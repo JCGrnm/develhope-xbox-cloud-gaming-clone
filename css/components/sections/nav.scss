@@ -104,22 +104,21 @@ nav {
           color: #fff;
           cursor: pointer;
         }
+        a {
+          font-family: Bahnschrift;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          word-break: break-word;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 36px;
+        }
       }
-      a {
-        font-family: Bahnschrift;
-        font-size: 14px;
-        font-weight: 400;
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        word-break: break-word;
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        line-height: 36px;
-      }
-
       form {
         .navbar__search-btn {
           background-color: transparent;
