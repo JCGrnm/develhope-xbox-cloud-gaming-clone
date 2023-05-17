@@ -24,7 +24,8 @@
 .card-game--sm a img {
   max-width: 306px;
   border-radius: 4px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .card-game--sm a .card-game--sm__text {
@@ -71,6 +72,4 @@
   .card-game--sm a img {
     max-width: 280px;
   }
-}
-
-/*# sourceMappingURL=card-game--sm.css.map */
+}/*# sourceMappingURL=card-game--sm.css.map */

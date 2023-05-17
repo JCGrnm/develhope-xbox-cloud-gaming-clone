@@ -188,9 +188,16 @@ nav .navbar__right form .navbar__searchbar-inner input#search {
   margin: 0 18px;
   max-width: 196px;
 }
+nav .navbar__right form .navbar__searchbar-inner input#search::-moz-selection {
+  background-color: #008746;
+  color: white;
+}
 nav .navbar__right form .navbar__searchbar-inner input#search::selection {
   background-color: #008746;
   color: white;
+}
+nav .navbar__right form .navbar__searchbar-inner input#search::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6509803922);
 }
 nav .navbar__right form .navbar__searchbar-inner input#search::placeholder {
   color: rgba(255, 255, 255, 0.6509803922);
@@ -201,6 +208,10 @@ nav .navbar__right form .navbar__searchbar-inner input#search::-moz-placeholder 
 }
 nav .navbar__right form .navbar__searchbar-inner input#search::-webkit-search-cancel-button {
   display: none;
+}
+nav .navbar__right form .navbar__searchbar-inner input#search:not(:-moz-placeholder-shown) ~ button {
+  position: relative;
+  left: -8px;
 }
 nav .navbar__right form .navbar__searchbar-inner input#search:not(:placeholder-shown) ~ button {
   position: relative;
@@ -304,6 +315,4 @@ nav .navbar__right button.navbar__user-btn:active::after {
   nav .navbar .navbar__left {
     gap: 10px;
   }
-}
-
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */

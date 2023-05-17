@@ -27,6 +27,7 @@ footer .footer__content a {
   text-decoration: none;
   line-height: 1rem;
   padding: 8px 0;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
 }
@@ -193,6 +194,4 @@ footer .footer .footer__row .footer__links p:hover {
   footer .footer .footer__row .footer__links a:first-child, footer .footer .footer__row .footer__links a:nth-child(5), footer .footer .footer__row .footer__links a:nth-child(8) {
     padding-left: 0;
   }
-}
-
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */
