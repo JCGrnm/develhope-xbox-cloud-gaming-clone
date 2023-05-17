@@ -41,6 +41,4 @@ main .primary-sections-wrapper::before {
     background-image: linear-gradient(-180deg, rgba(27, 29, 30, 0.5490196078) 0, #1a1b1e 100%), url(../../../assets/images/Card\ Grandi/nfs.jpg);
     top: -72px;
   }
-}
-
-/*# sourceMappingURL=primary-sections-wrapper.css.map */
+}/*# sourceMappingURL=primary-sections-wrapper.css.map */
