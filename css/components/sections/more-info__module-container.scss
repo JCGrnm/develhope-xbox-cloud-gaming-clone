@@ -1,0 +1,75 @@
+main .sections-wrapper .more-info__module-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .more-info__button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 42px;
+    margin-bottom: 72px;
+
+    a {
+      display: flex;
+      font-size: 14px;
+      line-height: 18px;
+      height: 40px;
+      fill: white;
+      color: white;
+      text-decoration: none;
+      align-items: center;
+      padding: 0px 8px;
+      width: fit-content;
+      border-radius: 4px;
+      gap: 0 8px;
+
+      &:hover {
+        background-color: #515863;
+      }
+      &:active {
+        background-color: #222428;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main
+    .sections-wrapper
+    .more-info__module-container
+    .more-info__button-container {
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main
+    .sections-wrapper
+    .more-info__module-container
+    .more-info__button-container {
+    padding: 0px 32px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  main
+    .sections-wrapper
+    .more-info__module-container
+    .more-info__button-container {
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  main
+    .sections-wrapper
+    .more-info__module-container
+    .more-info__button-container {
+    padding: 0px 16px;
+  }
+}
