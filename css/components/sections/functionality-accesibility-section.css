@@ -10,7 +10,7 @@ main .sections-wrapper .functionality-accesibility-section .section-text {
   padding: 0;
 }
 main .sections-wrapper .functionality-accesibility-section__content {
-  width: 50%;
+  width: calc(50% - 16px);
   display: flex;
   flex-direction: column;
 }
