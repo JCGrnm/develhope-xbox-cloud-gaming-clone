@@ -98,7 +98,7 @@ nav .navbar__right .navbar__login-link:active {
   color: #fff;
   cursor: pointer;
 }
-nav .navbar__right a {
+nav .navbar__right .navbar__login-link a {
   font-family: Bahnschrift;
   font-size: 14px;
   font-weight: 400;
