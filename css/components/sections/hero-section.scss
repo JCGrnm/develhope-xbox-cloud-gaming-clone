@@ -144,6 +144,12 @@ main .sections-wrapper .hero-section {
           cursor: pointer;
           display: flex;
           align-items: center;
+          &:hover {
+            background-color: #6b7584;
+          }
+          &:active {
+            background-color: #222428;
+          }
           svg {
             fill: white;
             height: 1rem;
@@ -188,6 +194,16 @@ main .sections-wrapper .hero-section {
             font-size: 14px;
             font-family: Bahnschrift;
             font-weight: 600;
+            &:hover {
+              color: #a8deb6;
+              background-color: #515863;
+              svg {
+                fill: #a8deb6;
+              }
+            }
+            &:active {
+              background-color: #222428;
+            }
             svg {
               width: 16px;
               height: 16px;
