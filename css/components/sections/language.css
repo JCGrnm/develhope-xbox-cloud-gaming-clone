@@ -26,17 +26,21 @@ main .sections-wrapper .language-section .language-section__content .language-bu
   display: flex;
   width: 100%;
   justify-content: space-between;
-  font-weight: 100;
+  line-height: 16px;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__head span {
+  margin-right: 8px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6509803922);
   flex-basis: 0;
   text-align: center;
   flex-grow: 1;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__head span:first-child {
-  flex-grow: 2;
-  flex-basis: 0;
-  text-align: left;
+  margin-right: 16px;
+}
+main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__head span:last-child {
+  margin-right: 0;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__body {
   padding: 8px 0;
@@ -60,15 +64,18 @@ main .sections-wrapper .language-section .language-section__content .language-bu
   background: linear-gradient(rgba(45, 48, 54, 0.4) 0%, rgb(45, 48, 54) 80%);
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__body span {
+  margin-right: 8px;
   text-align: left;
   flex-grow: 2;
   flex-basis: 0;
+  margin-right: 16px;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__body-svg--first {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   flex-basis: 0;
+  margin-right: 8px;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__body-svg--first svg {
   width: 20px;
@@ -80,6 +87,7 @@ main .sections-wrapper .language-section .language-section__content .language-bu
   display: flex;
   justify-content: center;
   flex-basis: 0;
+  margin-right: 8px;
 }
 main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__body-svg--second svg {
   width: 20px;
@@ -122,4 +130,33 @@ main .sections-wrapper .language-section .language-section__content .language-bu
 }
 main .sections-wrapper .language-section .language-section__content .language-button:active::after {
   background-color: rgba(0, 0, 0, 0.1019607843);
-}/*# sourceMappingURL=prova.css.map */
+}
+
+@media screen and (min-width: 1919px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-height: 480px) and (min-width: 480px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 16px;
+  }
+  main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__head span {
+    font-size: 12px;
+  }
+  main .sections-wrapper .language-section .language-section__content .language-button__main .language-button__head span:first-child {
+    flex-grow: 1;
+  }
+}
+
+/*# sourceMappingURL=language.css.map */

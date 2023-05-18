@@ -26,17 +26,22 @@ main .sections-wrapper .language-section .language-section__content {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        font-weight: 100;
+        line-height: 16px;
 
         span {
+          margin-right: 8px;
+          font-weight: 100;
+          color: #ffffffa6;
           flex-basis: 0;
           text-align: center;
           flex-grow: 1;
 
           &:first-child {
-            flex-grow: 2;
-            flex-basis: 0;
-            text-align: left;
+            margin-right: 16px;
+          }
+
+          &:last-child {
+            margin-right: 0;
           }
         }
       }
@@ -68,9 +73,11 @@ main .sections-wrapper .language-section .language-section__content {
         }
 
         span {
+          margin-right: 8px;
           text-align: left;
           flex-grow: 2;
           flex-basis: 0;
+          margin-right: 16px;
         }
 
         &-svg--first {
@@ -78,6 +85,7 @@ main .sections-wrapper .language-section .language-section__content {
           display: flex;
           justify-content: center;
           flex-basis: 0;
+          margin-right: 8px;
 
           & svg {
             width: 20px;
@@ -91,6 +99,7 @@ main .sections-wrapper .language-section .language-section__content {
           display: flex;
           justify-content: center;
           flex-basis: 0;
+          margin-right: 8px;
 
           & svg {
             width: 20px;
@@ -142,6 +151,41 @@ main .sections-wrapper .language-section .language-section__content {
 
     &:active::after {
       background-color: #0000001a;
+    }
+  }
+}
+@media screen and (min-width: 1919px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-height: 480px) and (min-width: 480px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  main .sections-wrapper .language-section .language-section__content {
+    padding: 0 16px;
+    .language-button {
+      &__main {
+        .language-button__head {
+          span {
+            font-size: 12px;
+            &:first-child {
+              flex-grow: 1;
+            }
+          }
+        }
+      }
     }
   }
 }
