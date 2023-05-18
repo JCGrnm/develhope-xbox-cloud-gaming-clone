@@ -139,6 +139,12 @@ main .sections-wrapper .hero-section__left .hero-section__buttons-small .hero-se
   display: flex;
   align-items: center;
 }
+main .sections-wrapper .hero-section__left .hero-section__buttons-small .hero-section__btn:hover {
+  background-color: #6b7584;
+}
+main .sections-wrapper .hero-section__left .hero-section__buttons-small .hero-section__btn:active {
+  background-color: #222428;
+}
 main .sections-wrapper .hero-section__left .hero-section__buttons-small .hero-section__btn svg {
   fill: white;
   height: 1rem;
@@ -181,6 +187,16 @@ main .sections-wrapper .hero-section__right .hero-section__classification-pegi .
   font-size: 14px;
   font-family: Bahnschrift;
   font-weight: 600;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a:hover {
+  color: #a8deb6;
+  background-color: #515863;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a:hover svg {
+  fill: #a8deb6;
+}
+main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a:active {
+  background-color: #222428;
 }
 main .sections-wrapper .hero-section__right .hero-section__classification-pegi .hero-section__classification-text a svg {
   width: 16px;
