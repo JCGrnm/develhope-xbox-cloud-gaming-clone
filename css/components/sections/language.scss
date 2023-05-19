@@ -38,6 +38,8 @@ main .sections-wrapper .language-section .language-section__content {
 
           &:first-child {
             margin-right: 16px;
+            flex-grow: 2;
+            text-align: left;
           }
 
           &:last-child {
