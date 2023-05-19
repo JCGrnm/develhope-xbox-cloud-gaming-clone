@@ -1,0 +1,33 @@
+.svg-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.svg-container__gamepass {
+  height: 32px;
+}
+.svg-container__gamepass svg {
+  margin: 8px;
+  width: 26px;
+  height: 16px;
+  fill: white;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+.svg-container__controller {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-top-left-radius: 4px;
+}
+.svg-container__controller svg {
+  fill: white;
+  border-top-left-radius: 4px;
+}
+a:hover .svg-container__controller, a:hover .svg-container__gamepass {
+  transform: translateY(100%);
+}/*# sourceMappingURL=svg-container.css.map */

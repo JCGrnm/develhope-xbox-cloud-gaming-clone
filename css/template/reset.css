@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Bahnschrift;
+  src: url(../../assets/font/Bahnschrift.30b0e116.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

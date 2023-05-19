@@ -1,0 +1,78 @@
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar {
+  height: 17px;
+}
+
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-track,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-track,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-track,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar-track {
+  background-color: #1e2023;
+}
+
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-thumb,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-thumb,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-thumb,
+.gamepass-wrapper .sna-section .sna-section__content::-webkit-scrollbar-thumb {
+  background-color: #767678;
+}
+
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-button:single-button:decrement,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-button:single-button:decrement,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-button:single-button:decrement,
+.gamepass-wrapper
+  .sna-section
+  .sna-section__content::-webkit-scrollbar-button:single-button:decrement {
+  background-color: #1c1d1f;
+  background-image: url("../../assets/images/svg\ img/scrollbar/left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 1.5px;
+  width: 16px;
+}
+
+.primary-sections-wrapper
+  .base-section
+  .base-section__content::-webkit-scrollbar-button:single-button:increment,
+.primary-sections-wrapper
+  .cloud-section
+  .cloud-section__content::-webkit-scrollbar-button:single-button:increment,
+.gamepass-wrapper
+  .added-recently-section
+  .added-recently-section__content::-webkit-scrollbar-button:single-button:increment,
+.gamepass-wrapper
+  .sna-section
+  .sna-section__content::-webkit-scrollbar-button:single-button:increment {
+  background-color: #1c1d1f;
+  background-image: url("../../assets/images/svg\ img/scrollbar/right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 3.5px;
+  width: 16px;
+}
