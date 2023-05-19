@@ -1,7 +1,8 @@
 main .desc-section .desc-section__content {
   display: flex;
   width: 100%;
-  padding: 32px 48px;
+  padding: 16px 48px;
+  text-decoration: none !important;
 }
 main .desc-section .desc-section__content .x {
   display: flex;
@@ -16,6 +17,7 @@ main .desc-section .desc-section__content .desc-button {
   justify-content: space-between;
   position: relative;
   color: white;
+  font-weight: 400;
   border-radius: 4px;
   border: none;
   text-align: initial;
@@ -29,6 +31,7 @@ main .desc-section .desc-section__content .desc-button::after {
   top: 0;
   bottom: 0;
   position: absolute;
+  border-radius: 4px;
 }
 main .desc-section .desc-section__content .desc-button:hover::after {
   background-color: rgba(255, 255, 255, 0.1019607843);
@@ -44,9 +47,6 @@ main .desc-section .desc-section__content .desc-button__img img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
-main .desc-section .desc-section__content .desc-button a {
-  text-decoration: none;
-}
 main .desc-section .desc-section__content .desc-button__body {
   display: flex;
   flex-direction: row;
@@ -54,15 +54,13 @@ main .desc-section .desc-section__content .desc-button__body {
   min-width: 103px;
   fill: #fff;
   color: #fff;
-  padding: 16px;
   width: 100%;
 }
 main .desc-section .desc-section__content .desc-button__body-left {
-  margin: 0;
-  display: flex;
+  margin-left: 1rem;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 16px;
+  padding-right: 16px;
   min-width: 103px;
 }
 main .desc-section .desc-section__content .desc-button__body-left p {
@@ -82,7 +80,7 @@ main .desc-section .desc-section__content .desc-button__body-left--text {
   word-wrap: break-word;
 }
 main .desc-section .desc-section__content .desc-button__body-left--text-up {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 main .desc-section .desc-section__content .desc-button__body-showmore .svg-body--arrow {
   margin: 0px 0px 2px 4px;
@@ -106,21 +104,24 @@ main .desc-section .desc-section__content .desc-button__body-right {
   justify-content: space-around;
   min-width: 139px;
   flex: 1;
+  font-size: 14px;
+  padding-top: 1rem;
 }
 main .desc-section .desc-section__content .desc-button__body-right1--up, main .desc-section .desc-section__content .desc-button__body-right2--up, main .desc-section .desc-section__content .desc-button__body-right3--up {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1919px) {
-  main .sections-wrapper .desc-section {
-    padding: 0px 80px;
+@media screen and (min-width: 1920px) {
+  main .desc-section .desc-section__content {
+    padding: 40px 80px;
   }
 }
-@media screen and (min-width: 1919px) and (min-width: 1366px) and (min-height: 481px) {
-  main .sections-wrapper .desc-section .desc-section__content .desc-button .desc-button__body-right {
+@media screen and (min-width: 1366px) and (min-height: 481px) {
+  main .desc-section .desc-section__content .desc-button .desc-button__body-right {
     flex: 1;
     flex-direction: row;
     min-width: 311px;
+    font-size: 14px;
   }
   .desc-button__body-left {
     flex: 1;
@@ -129,68 +130,67 @@ main .desc-section .desc-section__content .desc-button__body-right1--up, main .d
     width: 100%;
   }
 }
-@media screen and (min-width: 1919px) and (min-width: 1366px) and (min-height: 481px) and (min-width: 1024px) and (min-height: 481px) {
-  main .sections-wrapper .desc-section .desc-section__content .desc-button .desc-button__body-right {
+@media screen and (min-width: 1366px) and (min-height: 481px) and (min-width: 1024px) and (min-height: 481px) {
+  main .desc-section .desc-section__content .desc-button .desc-button__body-right {
     min-width: 213px;
   }
 }
-@media screen and (min-width: 1919px) and (min-width: 767px) and (max-height: 481px) {
-  main .sections-wrapper .desc-section {
-    padding: 0px 32px;
-  }
-  .desc-button__body-right {
-    min-width: 160px;
-  }
-  .desc-button__body-left__text {
-    -webkit-line-clamp: 7;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
+@media screen and (max-width: 767px) {
+  main .desc-section .desc-section__content {
+    padding: 16px 32px;
   }
 }
-@media screen and (min-width: 1919px) and (min-width: 568px) and (max-height: 480px) {
-  .desc-button__img {
-    height: 431px;
-  }
-  .desc-button__body-left {
-    max-width: 1920px;
-    left: 50%;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    transform: translate(-50%);
-    width: 100%;
-    z-index: -1;
-    text-overflow: ellipsis;
-    white-space: pre-wrap;
-    display: block;
-  }
+.desc-button__body-left__text {
+  -webkit-line-clamp: 7;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
-@media (max-width: 568px) {
+
+@media screen and (max-width: 568px) {
+  main .desc-section .desc-section__content {
+    padding-top: inherit;
+    padding-bottom: 1rem;
+  }
   .desc-button {
     flex-direction: column !important;
     padding: 1rem !important;
   }
+  main .desc-section .desc-section__content .desc-button__body-left {
+    margin-left: 0;
+  }
   .desc-button__body-right {
     display: none !important;
-  }
-  .x {
-    padding: 20px;
   }
   .sm-text {
     display: flex !important;
     flex-direction: column;
-    justify-content: space-around;
-    min-width: 139px;
+    justify-content: space-between;
+    font-size: 16px;
   }
   .sm-text1--up, .sm-text2--up, .sm-text3--up {
     font-weight: bold;
   }
 }
-@media (max-width: 479px) and (max-height: 480px) {
-  main .sections-wrapper .desc-section {
-    padding: 0px 16px;
+@media screen and (max-width: 479px), screen and (max-height: 480px) {
+  main .desc-section .desc-section__content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+  }
+  main .desc-section .desc-section__content .desc-button {
+    padding: 0;
+  }
+  main .desc-section .desc-section__content .desc-button .x .sm-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 280px) {
+  main .desc-section .desc-section__content .desc-button {
+    padding: 0;
+    overflow: hidden;
   }
 }
 
