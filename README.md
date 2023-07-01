@@ -3,7 +3,7 @@
 # Xbox Cloud Gaming (clone)
 
 Here is our very first Develhope Team Project: **Xbox Cloud Gaming static pages.**<br/>
-Here is the live [preview](https://jcgrnm.github.io/xbox-gaming/) !
+Here is the live [preview] !
 
 Team members:</br>
 - Antonino Alampi (https://github.com/xTony2108)</br>
